@@ -1,4 +1,4 @@
-import { SlideUpAnimation } from "./SlideUpAnimate";
+import { SlideUpAnimate } from "./SlideUpAnimate";
 import {
   Card,
   CardBody,
@@ -17,7 +17,7 @@ export function Subscribe() {
         alt="banner"
         className="w-full h-full object-cover hidden md:block"
       />
-      <SlideUpAnimation classname="md:absolute inset-y-0 grid place-items-center right w-full md:w-1/2">
+      <SlideUpAnimate classname="md:absolute inset-y-0 grid place-items-center right w-full md:w-1/2">
         <Card className="md:text-left rounded-none mb-2">
           <CardBody className="text-black">
             <Typography className="text-base md:text-xl font-semibold mb-2 uppercase">
@@ -37,7 +37,7 @@ export function Subscribe() {
             </Button>
           </CardFooter>
         </Card>
-      </SlideUpAnimation>
+      </SlideUpAnimate>
     </div>
   );
 }

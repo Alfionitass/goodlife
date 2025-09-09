@@ -1,4 +1,4 @@
-import { SlideUpAnimation } from "./SlideUpAnimate";
+import { SlideUpAnimate } from "./SlideUpAnimate";
 import {
   Card,
   CardBody,
@@ -15,7 +15,7 @@ export function CardWithImage() {
         alt="banner"
         className="md:w-4/5 h-auto object-cover"
       />
-      <SlideUpAnimation classname="md:absolute md:right-[40%]">
+      <SlideUpAnimate classname="md:absolute md:right-[40%]">
         <Card className="card-fly md:my-6 md:p-4 w-96 bg-brand-secondary-dark rounded-none md:text-left w-full">
           <CardBody className="text-white">
             <Typography className="text-2xl md:text-3xl font-semibold mb-2">
@@ -35,7 +35,7 @@ export function CardWithImage() {
             </Button>
           </CardFooter>
         </Card>
-      </SlideUpAnimation>
+      </SlideUpAnimate>
     </div>
 
     // <div className="card mt-6 w-96 bg-secondary-brand-maroon">

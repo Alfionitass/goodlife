@@ -1,4 +1,4 @@
-import { SlideUpAnimation } from "./SlideUpAnimate";
+import { SlideUpAnimate } from "./SlideUpAnimate";
 import { Typography, Button } from "@material-tailwind/react";
 
 const shopList = [
@@ -25,12 +25,12 @@ const shopList = [
 export function Shop() {
   return (
     <div className="my-8 px-4">
-      <SlideUpAnimation>
+      <SlideUpAnimate>
         <Typography className="text-2xl md:text-4xl font-semibold mb-6 w-full h-full">
           Shop From Your Favorite Platform
         </Typography>
-      </SlideUpAnimation>
-      <SlideUpAnimation classname="grid md:grid-cols-4">
+      </SlideUpAnimate>
+      <SlideUpAnimate classname="grid md:grid-cols-4">
         {shopList.map((item, id) => (
           <div
             key={id}
@@ -50,7 +50,7 @@ export function Shop() {
             </Button>
           </div>
         ))}
-      </SlideUpAnimation>
+      </SlideUpAnimate>
     </div>
   );
 }

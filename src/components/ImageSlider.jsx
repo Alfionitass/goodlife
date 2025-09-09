@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { Typography } from "@material-tailwind/react";
+import { useState, useEffect } from "react";
+import { AutoAnimate } from "./AutoAnimate";
+import { Typography, Slider } from "@material-tailwind/react";
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -25,30 +26,29 @@ const imageList = [
 export default function ImageSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % imageList.length);
+    }, 3000); // Change item every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [imageList.length]);
+
   const handleClick = (e, id) => {
     e.preventDefault();
     setActiveIndex(id);
   };
-  console.log(activeIndex);
 
   return (
     <div className="w-full slider h-auto md:h-[400px] flex flex-col md:flex-row gap-6 my-8">
-      <div className="w-full md:w-1/2">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          ></motion.div>
-          <img
-            src={imageList[activeIndex].image}
-            alt=""
-            className="h-full w-full"
-          />
-        </AnimatePresence>
-      </div>
-      <div className="flex-col w-full md:w-1/2">
+      <AutoAnimate key={activeIndex} classname="w-full md:w-1/2">
+        <img
+          src={imageList[activeIndex].image}
+          alt=""
+          className="h-full w-full"
+        />
+      </AutoAnimate>
+      <div className="flex-col w-full md:w-1/2 md:pr-6">
         <Typography variant="h6" color="black" className="mb-4 text-lg">
           GOODLIFE
         </Typography>
@@ -72,30 +72,25 @@ export default function ImageSlider() {
             </div>
           ))}
         </div>
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeIndex}
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="flex flex-col gap-4 overflow-hidden px-8 md:px-4"
+        <AutoAnimate
+          key={activeIndex}
+          classname="flex flex-col gap-4 overflow-hidden px-8 md:px-4"
+        >
+          <Typography
+            variant="h3"
+            color="black"
+            className="mb-4 text-xl md:text-3xl"
           >
-            <Typography
-              variant="h3"
-              color="black"
-              className="mb-4 text-xl md:text-3xl"
-            >
-              {imageList[activeIndex].title}
-            </Typography>
-            <Typography
-              variant="paragraph"
-              color="black"
-              className="mb-4 text-base"
-            >
-              {imageList[activeIndex].desc}
-            </Typography>
-          </motion.div>
-        </AnimatePresence>
+            {imageList[activeIndex].title}
+          </Typography>
+          <Typography
+            variant="paragraph"
+            color="black"
+            className="mb-4 text-base"
+          >
+            {imageList[activeIndex].desc}
+          </Typography>
+        </AutoAnimate>
       </div>
     </div>
   );

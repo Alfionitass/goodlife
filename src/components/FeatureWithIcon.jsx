@@ -1,4 +1,4 @@
-import { SlideUpAnimation } from "./SlideUpAnimate";
+import { SlideUpAnimate } from "./SlideUpAnimate";
 import { Typography } from "@material-tailwind/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +10,7 @@ import {
 
 export function FeatureWithIcon() {
   return (
-    <SlideUpAnimation classname="grid grid-rows md:grid-cols-4 my-8 gap-8">
+    <SlideUpAnimate classname="grid grid-rows md:grid-cols-4 my-8 gap-8">
       <div className="flex flex-col justify-center items-center gap-2 p-4">
         <FontAwesomeIcon icon={faHeadset} className="text-5xl mb-4" />
         <Typography className="font-bold uppercase">
@@ -35,6 +35,6 @@ export function FeatureWithIcon() {
         </Typography>
         <Typography>Your satisfaction is guaranteed</Typography>
       </div>
-    </SlideUpAnimation>
+    </SlideUpAnimate>
   );
 }
