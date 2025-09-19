@@ -24,6 +24,7 @@ export default withMT({
       },
       fontSize: {
         "3xl": ["2rem", "2.25rem"],
+        "6xl": ["3.5rem", "1"],
       },
       keyframes: {
         fadeIn: {

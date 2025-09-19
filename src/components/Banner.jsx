@@ -1,21 +1,7 @@
 import { useState, useEffect } from "react";
 import { Carousel, Typography, Button } from "@material-tailwind/react";
-import banner1 from "../assets/banner-1.jpg";
 
-const bannerList = [
-  {
-    title: "Smart Storage",
-    image: banner1,
-    imgAlt: "Banner 1",
-  },
-  {
-    title: "One Stop for All Things Home",
-    image: banner1,
-    imgAlt: "Banner 2",
-  },
-];
-
-export function CarouselBanner() {
+export function Banner({ banner }) {
   const [hasLoaded, setHasLoaded] = useState(false);
 
   useEffect(() => {
@@ -27,7 +13,7 @@ export function CarouselBanner() {
 
   return (
     <Carousel className={`mb-8 ${hasLoaded ? 'animate-fadeIn' : 'opacity-0'}`} autoplay="true" loop="true">
-      {bannerList.map((item, id) => (
+      {banner.map((item, id) => (
         <div className="relative h-full w-full" key={id}>
           <img
             src={item.image}
