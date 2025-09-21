@@ -23,7 +23,7 @@ export function Footer({ logo }) {
           </p>
         </div>
         <div className="navigation flex flex-col">
-          <p className="text-sm font-bold uppercase pt-4 mb-4">
+          <p className="text-sm font-black uppercase pt-4 mb-4">
             Navigation
           </p>
           <p className="text-sm mb-2">
@@ -43,7 +43,7 @@ export function Footer({ logo }) {
           </p>
         </div>
         <div className="cs-care flex flex-col">
-          <p className="text-sm font-bold uppercase pt-4 mb-4">
+          <p className="text-sm font-black uppercase pt-4 mb-4">
             Customer Care
           </p>
           <p className="text-sm mb-2">
@@ -57,7 +57,7 @@ export function Footer({ logo }) {
           </p>
         </div>
         <div className="social-media flex flex-col items-center md:items-start">
-          <p className="text-sm font-bold uppercase pt-4 mb-4">
+          <p className="text-sm font-black uppercase pt-4 mb-4">
             Find Us
           </p>
           <div className="flex gap-2">

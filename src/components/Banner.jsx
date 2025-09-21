@@ -25,7 +25,7 @@ export function Banner({ banner }) {
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-xl md:text-4xl lg:text-5xl"
+                className="mb-4 text-xl md:text-4xl lg:text-5xl font-black"
               >
                 {item.title}
               </Typography>

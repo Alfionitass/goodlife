@@ -16,7 +16,7 @@ export function Products({ products }) {
 
   return (
     <div className="flex flex-col my-8">
-      <h4 className="mb-4 text-2xl md:text-3xl font-bold">Meet Our New Arrival</h4>
+      <h4 className="mb-4 text-2xl md:text-3xl font-black">Meet Our New Arrival</h4>
       <div className="relative overflow-auto">
         <div className="md:flex gap-4 grid grid-cols-2">
           {products.map((item, id) => (

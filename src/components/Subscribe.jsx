@@ -19,7 +19,7 @@ export function Subscribe({ banner }) {
       <SlideUpAnimate classname="md:absolute inset-y-0 grid place-items-center right w-full md:w-1/2">
         <Card className="md:text-left rounded-none mb-2">
           <CardBody className="text-black">
-            <Typography className="text-base md:text-xl font-bold mb-2 uppercase">
+            <Typography className="text-base md:text-xl font-black mb-2 uppercase">
               Don't Miss Out
             </Typography>
             <Typography>

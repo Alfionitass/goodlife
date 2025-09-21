@@ -26,7 +26,7 @@ export default function ImageSlider({ slides }) {
         <img src={slides[activeIndex].image} alt="" className="h-full w-full" />
       </AutoAnimate>
       <div className="flex-col w-full md:w-1/2 md:pr-6">
-        <h6 className="mb-4">GOODLIFE</h6>
+        <h6 className="mb-4 font-black">GOODLIFE</h6>
         <div className="flex flex-row justify-center gap-x-10 my-4">
           {slides.map((item, id) => (
             <div
@@ -50,7 +50,7 @@ export default function ImageSlider({ slides }) {
           key={activeIndex}
           classname="flex flex-col gap-4 overflow-hidden px-8 md:px-4"
         >
-          <h4 className="mb-4 text-xl md:text-3xl">
+          <h4 className="mb-4 text-xl md:text-3xl font-black">
             {slides[activeIndex].title}
           </h4>
           <p className="mb-4">{slides[activeIndex].desc}</p>

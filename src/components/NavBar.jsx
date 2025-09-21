@@ -16,7 +16,7 @@ const NavList = () => {
         <Typography
           as="li"
           color="black"
-          className="p-1 font-medium"
+          className="p-1"
           key={index}
         >
           <a
