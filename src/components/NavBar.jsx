@@ -1,15 +1,11 @@
 import { useState, useEffect } from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
-  Button,
   IconButton,
-  Card,
   Collapse,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import goodlifeLogo from "../assets/goodlife-logo.png";
 
 const menuList = ["Tentang Kami", "Produk", "Layanan", "Kerjasama", "Bantuan"];
 
@@ -35,7 +31,7 @@ const NavList = () => {
   );
 };
 
-export function NavBar() {
+export function NavBar({ logo }) {
   const [openNav, setOpenNav] = useState(false);
 
   const handleWindowResize = () =>
@@ -52,7 +48,7 @@ export function NavBar() {
   return (
     <Navbar className="mx-auto max-w-screen-xl px-6 py-3 shadow-none">
       <div className="flex flex-row items-center justify-between text-blue-gray-900 lg:flex-col">
-        <img src={goodlifeLogo} alt="Goodlife Logo" width="153" height="51" />
+        <img src={logo} alt="Goodlife Logo" width="153" height="51" />
         <div className="hidden lg:block">
           <NavList />
         </div>

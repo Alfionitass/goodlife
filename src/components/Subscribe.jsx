@@ -1,4 +1,4 @@
-import { SlideUpAnimation } from "./SlideUpAnimate";
+import { SlideUpAnimate } from "./SlideUpAnimate";
 import {
   Card,
   CardBody,
@@ -7,20 +7,19 @@ import {
   Input,
   Button,
 } from "@material-tailwind/react";
-import banner from "../assets/banner-1.jpg";
 
-export function Subscribe() {
+export function Subscribe({ banner }) {
   return (
     <div className="relative h-full w-full my-8">
       <img
-        src={banner}
+        src={banner.src}
         alt="banner"
         className="w-full h-full object-cover hidden md:block"
       />
-      <SlideUpAnimation classname="md:absolute inset-y-0 grid place-items-center right w-full md:w-1/2">
+      <SlideUpAnimate classname="md:absolute inset-y-0 grid place-items-center right w-full md:w-1/2">
         <Card className="md:text-left rounded-none mb-2">
           <CardBody className="text-black">
-            <Typography className="text-base md:text-xl font-semibold mb-2 uppercase">
+            <Typography className="text-base md:text-xl font-bold mb-2 uppercase">
               Don't Miss Out
             </Typography>
             <Typography>
@@ -37,7 +36,7 @@ export function Subscribe() {
             </Button>
           </CardFooter>
         </Card>
-      </SlideUpAnimation>
+      </SlideUpAnimate>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { SlideUpAnimation } from "./SlideUpAnimate";
+import { SlideUpAnimate } from "./SlideUpAnimate";
 import { Typography } from "@material-tailwind/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,31 +10,35 @@ import {
 
 export function FeatureWithIcon() {
   return (
-    <SlideUpAnimation classname="grid grid-rows md:grid-cols-4 my-8 gap-8">
+    <SlideUpAnimate classname="grid grid-rows md:grid-cols-4 my-8 gap-8">
       <div className="flex flex-col justify-center items-center gap-2 p-4">
         <FontAwesomeIcon icon={faHeadset} className="text-5xl mb-4" />
-        <Typography className="font-bold uppercase">
-          Customer Service
-        </Typography>
-        <Typography>Contact us at hello@good-life.id</Typography>
+        <div>
+          <p className="font-bold uppercase mb-2">Customer Service</p>
+          <p>Contact us at hello@good-life.id</p>
+        </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-2 p-4">
+      <div className="flex flex-col items-center gap-2 p-4">
         <FontAwesomeIcon icon={faTruck} className="text-5xl mb-4" />
-        <Typography className="font-bold uppercase">Free Shipping</Typography>
-        <Typography>Free Delivery Across</Typography>
+        <div>
+          <p className="font-bold uppercase mb-2">Free Shipping</p>
+          <p>Free Delivery Across</p>
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-2 p-4">
         <FontAwesomeIcon icon={faCreditCard} className="text-5xl mb-4" />
-        <Typography className="font-bold uppercase">Secure Payment</Typography>
-        <Typography>Trusted payments, your way</Typography>
+        <div>
+          <p className="font-bold uppercase mb-2">Secure Payment</p>
+          <p>Trusted payments, your way</p>
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-2 p-4">
         <FontAwesomeIcon icon={faMedal} className="text-5xl mb-4" />
-        <Typography className="font-bold uppercase">
-          30-Day Return Policy
-        </Typography>
-        <Typography>Your satisfaction is guaranteed</Typography>
+        <div>
+          <p className="font-bold uppercase mb-2">30-Day Return Policy</p>
+          <p>Your satisfaction is guaranteed</p>
+        </div>
       </div>
-    </SlideUpAnimation>
+    </SlideUpAnimate>
   );
 }

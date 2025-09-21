@@ -1,0 +1,78 @@
+{
+    "logo": {
+        "goodlife": "assets/goodlife-logo.png",
+        "goodlifeWhite": "assets/goodlife-white-logo.png"
+    },
+    "banner": [
+        {
+            "title": "Smart Storage",
+            "image": "assets/banner-1.jpg",
+            "imgAlt": "Banner 1"
+        },
+        {
+            "title": "One Stop for All Things Home",
+            "image": "assets/banner-1.jpg",
+            "imgAlt": "Banner 2"
+        }
+    ],
+    "products": [
+        {
+            "image": "assets/001.jpg",
+            "title": "Smart Storage",
+            "alt": "image 1"
+        },
+        {
+            "image": "assets/001.jpg",
+            "title": "Smart Home Appliance (Coming Soon)",
+            "alt": "image 2"
+        },
+        {
+            "image": "assets/001.jpg",
+            "title": "Gadget Accessories (Coming Soon)",
+            "alt": "image 3"
+        },
+        {
+            "image": "assets/001.jpg",
+            "title": "Arti-Q Powerbank (Coming Soon)",
+            "alt": "image 4"
+        }
+    ],
+    "slides": [
+        {
+            "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1332",
+            "keyTitle": "Core Value",
+            "title": "Create a Space That Inspires Your Best Activities",
+            "desc": "To truly grasp the essence of life, we believe one must be fully immersed in nature and sustainability. Our ambition is to infuse every product, from initial concept to completion, with this profound love for life, creating a space that inspires your best activities.",
+            "alt": "image 1"
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1503387837-b154d5074bd2?q=80&w=1331",
+            "keyTitle": "Concept",
+            "title": "Make your escape, in any style",
+            "desc": "We seek to create moments of unparalleled serenity and beauty, where life and nature intertwine perfectly.",
+            "alt": "image 2"
+        }
+    ],
+    "onlineStore": [
+        {
+            "imgSrc": "https://good-life.id/wp-content/uploads/2025/07/logo-tiktokshop-1.png",
+            "alt": "Tiktok Shop"
+        },
+        {
+            "imgSrc": "https://good-life.id/wp-content/uploads/2025/07/logo-tokopedia.png",
+            "alt": "Tokopedia"
+        },
+        {
+            "imgSrc": "https://good-life.id/wp-content/uploads/2025/07/logo-shopee.png",
+            "alt": "Shopee"
+        },
+        {
+            "imgSrc": "https://good-life.id/wp-content/uploads/2025/07/logo-toco.png",
+            "alt": "Toco"
+        }
+    ],
+    "subsBanner": {
+        "src": "assets/banner-1.jpg",
+        "alt": "Banner 1"
+    }
+}

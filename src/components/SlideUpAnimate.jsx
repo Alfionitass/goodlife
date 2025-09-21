@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-export function SlideUpAnimation({ classname, children }) {
+export function SlideUpAnimate({ key, classname, children }) {
   return (
     <motion.div
+      key={key}
       className={classname}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
