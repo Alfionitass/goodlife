@@ -1,8 +1,12 @@
 {
+    "logo": {
+        "goodlife": "assets/goodlife-logo.png",
+        "goodlifeWhite": "assets/goodlife-white-logo.png"
+    },
     "banner": [
         {
             "title": "Smart Storage",
-            "image": "/assets/banner-1.jpg",
+            "image": "assets/banner-1.jpg",
             "imgAlt": "Banner 1"
         },
         {
@@ -13,22 +17,22 @@
     ],
     "products": [
         {
-            "image": "/assets/001.jpg",
+            "image": "assets/001.jpg",
             "title": "Smart Storage",
             "alt": "image 1"
         },
         {
-            "image": "/assets/001.jpg",
+            "image": "assets/001.jpg",
             "title": "Smart Home Appliance (Coming Soon)",
             "alt": "image 2"
         },
         {
-            "image": "/assets/001.jpg",
+            "image": "assets/001.jpg",
             "title": "Gadget Accessories (Coming Soon)",
             "alt": "image 3"
         },
         {
-            "image": "/assets/001.jpg",
+            "image": "assets/001.jpg",
             "title": "Arti-Q Powerbank (Coming Soon)",
             "alt": "image 4"
         }
@@ -66,5 +70,9 @@
             "imgSrc": "https://good-life.id/wp-content/uploads/2025/07/logo-toco.png",
             "alt": "Toco"
         }
-    ]
+    ],
+    "subsBanner": {
+        "src": "assets/banner-1.jpg",
+        "alt": "Banner 1"
+    }
 }

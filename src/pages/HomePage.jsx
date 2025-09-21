@@ -12,15 +12,15 @@ import data from "../data/data.json";
 export default function HomePage() {
   return (
     <>
-      <NavBar />
+      <NavBar logo={data.logo.goodlife} />
       <Banner banner={data.banner} />
       <Products products={data.products} />
       <ImageSlider slides={data.slides} />
       <CardWithImage />
       <Shop onlineStore={data.onlineStore} />
-      <Subscribe />
+      <Subscribe banner={data.subsBanner} />
       <FeatureWithIcon />
-      <Footer />
+      <Footer logo={data.logo.goodlifeWhite} />
     </>
   );
 }

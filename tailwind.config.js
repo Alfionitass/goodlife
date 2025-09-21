@@ -10,6 +10,8 @@ export default withMT({
       fontFamily: {
         // custom: ["Gotham", "Arial", "sans-serif"], // 'custom' is your utility class name
         sans: ['"Gotham"', ...defaultTheme.fontFamily.sans],
+        serif: ['"Gotham"', ...defaultTheme.fontFamily.serif], // Replace other default families as needed
+        mono: ['"Gotham"', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         "brand-primary": {

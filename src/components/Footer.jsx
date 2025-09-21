@@ -1,4 +1,3 @@
-import goodlifeWhite from "../assets/goodlife-white-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -6,13 +5,13 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 
-export function Footer() {
+export function Footer({ logo }) {
   return (
     <div className="footer flex flex-col items-center bg-brand-secondary-dark text-white px-8 py-8 mt-8">
       <div className="flex flex-col md:flex-row justify-between gap-4 mb-8 md:text-left">
         <div className="brand flex flex-col items-center md:items-start md:w-1/4">
           <img
-            src={goodlifeWhite}
+            src={logo}
             alt="Goodlife Logo"
             width="150"
             height="50"
@@ -24,7 +23,7 @@ export function Footer() {
           </p>
         </div>
         <div className="navigation flex flex-col">
-          <p className="text-sm font-semibold uppercase pt-4 mb-4">
+          <p className="text-sm font-bold uppercase pt-4 mb-4">
             Navigation
           </p>
           <p className="text-sm mb-2">
@@ -44,7 +43,7 @@ export function Footer() {
           </p>
         </div>
         <div className="cs-care flex flex-col">
-          <p className="text-sm font-semibold uppercase pt-4 mb-4">
+          <p className="text-sm font-bold uppercase pt-4 mb-4">
             Customer Care
           </p>
           <p className="text-sm mb-2">
@@ -54,11 +53,11 @@ export function Footer() {
             <a href="#">Shipping Info</a>
           </p>
           <p className="text-sm">
-            <a href="#">Return Popcy</a>
+            <a href="#">Return Policy</a>
           </p>
         </div>
         <div className="social-media flex flex-col items-center md:items-start">
-          <p className="text-sm font-semibold uppercase pt-4 mb-4">
+          <p className="text-sm font-bold uppercase pt-4 mb-4">
             Find Us
           </p>
           <div className="flex gap-2">
