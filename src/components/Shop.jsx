@@ -5,7 +5,7 @@ export function Shop({ onlineStore }) {
   return (
     <div className="my-8 px-4">
       <SlideUpAnimate>
-        <h3 className="text-2xl md:text-4xl mb-6 w-full h-full">
+        <h3 className="text-2xl md:text-4xl font-black mb-6 w-full h-full">
           Shop From Your Favorite Platform
         </h3>
       </SlideUpAnimate>

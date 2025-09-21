@@ -18,7 +18,7 @@ export function CardWithImage() {
       <SlideUpAnimate classname="md:absolute md:right-[40%]">
         <Card className="card-fly md:my-6 md:p-4 w-96 bg-brand-secondary-dark rounded-none md:text-left w-full">
           <CardBody className="text-white">
-            <Typography className="text-2xl md:text-3xl font-bold mb-2">
+            <Typography className="text-2xl md:text-3xl font-black mb-2">
               Tailored Services
             </Typography>
             <Typography>
