@@ -7,12 +7,10 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const menuList = ["Tentang Kami", "Produk", "Layanan", "Kerjasama", "Bantuan"];
-
-const NavList = () => {
+const NavList = ({ menu }) => {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      {menuList.map((item, index) => (
+      {menu?.map((item, index) => (
         <Typography
           as="li"
           color="black"
@@ -31,7 +29,7 @@ const NavList = () => {
   );
 };
 
-export function NavBar({ logo }) {
+export function NavBar({ menu, logo }) {
   const [openNav, setOpenNav] = useState(false);
 
   const handleWindowResize = () =>
@@ -50,7 +48,7 @@ export function NavBar({ logo }) {
       <div className="flex flex-row items-center justify-between text-blue-gray-900 lg:flex-col">
         <img src={logo} alt="Goodlife Logo" width="153" height="51" />
         <div className="hidden lg:block">
-          <NavList />
+          <NavList menu={menu} />
         </div>
         <IconButton
           variant="text"

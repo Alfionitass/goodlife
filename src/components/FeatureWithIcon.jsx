@@ -15,7 +15,7 @@ export function FeatureWithIcon() {
         <FontAwesomeIcon icon={faHeadset} className="text-5xl mb-4" />
         <div>
           <p className="font-black uppercase mb-2">Customer Service</p>
-          <p>Contact us at hello@good-life.id</p>
+          <p>Contact us at halo@good-life.id</p>
         </div>
       </div>
       <div className="flex flex-col items-center gap-2 p-4">

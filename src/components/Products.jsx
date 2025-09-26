@@ -22,9 +22,10 @@ export function Products({ products }) {
           {products.map((item, id) => (
             <div className="relative" key={id}>
               <img src={item.image} alt={item.alt} className="" />
-              <div className="absolute inset-0 grid w-full h-full items-center bg-black/50">
-                <div className="w-full px-4">
-                  <h5 className="mb-4 text-white text-lg md:text-2xl font-normal">{item.title}</h5>
+              <div className="absolute inset-x-0 inset-y-1/2 grid w-full">
+                <div className="px-1 md:px-4">
+                  <h4 className="mb-2 lg:mb-3 text-brand-secondary-dark text-lg md:text-xl lg:text-2xl">{item.title}</h4>
+                  <h6 className="mb-3 text-sm lg:text-xl font-normal">{item.desc}</h6>
                 </div>
               </div>
             </div>
