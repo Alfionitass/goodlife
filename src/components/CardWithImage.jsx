@@ -7,12 +7,12 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-export function CardWithImage() {
+export function CardWithImage({ data }) {
   return (
     <div className="img-fly relative flex flex-col md:flex-row md:justify-end md:items-center h-full w-full my-8">
       <img
-        src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1332"
-        alt="banner"
+        src={data.img}
+        alt={data.alt}
         className="md:w-4/5 h-auto object-cover"
       />
       <SlideUpAnimate classname="md:absolute md:right-[40%]">
