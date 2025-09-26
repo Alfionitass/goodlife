@@ -5,7 +5,7 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 
-export function Footer({ logo }) {
+export function Footer({ menu, logo }) {
   return (
     <div className="footer flex flex-col items-center bg-brand-secondary-dark text-white px-8 py-8 mt-8">
       <div className="flex flex-col md:flex-row justify-between gap-4 mb-8 md:text-left">
@@ -26,21 +26,11 @@ export function Footer({ logo }) {
           <p className="text-sm font-black uppercase pt-4 mb-4">
             Navigation
           </p>
-          <p className="text-sm mb-2">
-            <a href="#">Tentang Kami</a>
-          </p>
-          <p className="text-sm mb-2">
-            <a href="#">Produk</a>
-          </p>
-          <p className="text-sm mb-2">
-            <a href="#">Layanan</a>
-          </p>
-          <p className="text-sm mb-2">
-            <a href="#">Kerjasama</a>
-          </p>
-          <p className="text-sm">
-            <a href="#">Bantuan</a>
-          </p>
+          {menu?.map((item, index) => (
+            <p className="text-sm mb-2" key={index}>
+              <a href="#">{item}</a>
+            </p>
+          ))}
         </div>
         <div className="cs-care flex flex-col">
           <p className="text-sm font-black uppercase pt-4 mb-4">
@@ -61,9 +51,15 @@ export function Footer({ logo }) {
             Find Us
           </p>
           <div className="flex gap-2">
-            <FontAwesomeIcon icon={faFacebook} className="text-2xl" />
-            <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
-            <FontAwesomeIcon icon={faTiktok} className="text-2xl" />
+            <a href="https://www.facebook.com/ourgoodlife.id" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebook} className="text-2xl" />
+            </a>
+            <a href="https://www.instagram.com/ourgoodlife.id/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon icon={faTiktok} className="text-2xl" />
+            </a>
           </div>
         </div>
       </div>

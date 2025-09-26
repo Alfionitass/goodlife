@@ -10,10 +10,10 @@ export default function ImageSlider({ slides }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 3000); // Change item every 3 seconds
+    }, 30000); // Change item every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
-  }, [slides.length]);
+  }, [slides]);
 
   const handleClick = (e, id) => {
     e.preventDefault();
