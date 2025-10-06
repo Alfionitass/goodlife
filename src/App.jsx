@@ -1,10 +1,15 @@
 import "./App.css";
-import HomePage from "./pages/HomePage";
+import { AppRoutes } from "./Routes";
+import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
+import data from "./data/data.json";
 
 function App() {
   return (
     <>
-      <HomePage />
+      <NavBar menu={data.menu} logo={data.logo.goodlife} />
+      <AppRoutes />
+      <Footer menu={data.menu} logo={data.logo.goodlifeWhite} />
     </>
   );
 }
