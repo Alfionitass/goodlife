@@ -74,6 +74,27 @@
    .btn-red {
     @apply bg-brand-secondary-dark hover:bg-brand-primary-dark rounded-full px-8 py-3
    }
+   .form-container {
+    @apply relative w-auto md:w-96 h-12
+   }
+   .form-input {
+    @apply absolute top-0 left-0 w-full h-full border border-gray-300 outline-none p-5 transition-all ease-in
+   }
+   .form-input:hover {
+    @apply border-brand-primary-dark
+   }
+   .form-input:focus {
+     @apply border-brand-primary-dark
+   }
+   .form-label {
+    @apply text-gray-700 absolute top-3 left-4 px-2 cursor-text pointer-events-none
+   }
+   .form-input:focus ~ .form-label, .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+    @apply transition-all duration-200 ease-in top-[-0.5rem] left-3 text-sm text-brand-primary-dark bg-white
+   }
+   .form-btn {
+    @apply bg-brand-secondary-dark text-white uppercase w-auto md:w-96 h-12
+   }
 }
 
 /* @layer utilities {
