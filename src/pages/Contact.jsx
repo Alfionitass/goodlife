@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { FormInput, TextArea } from "../components/FormInput";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -38,9 +39,19 @@ export default function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
+          Swal.fire({
+            title: "Submitted",
+            text: "Your question has been submitted",
+            icon: "success",
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
+          Swal.fire({
+            title: "Oops...",
+            text: "Something went wrong! Please try again later",
+            icon: "error",
+          });
         },
       );
   };
