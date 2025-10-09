@@ -1,5 +1,26 @@
 {
-    "menu": ["About Us", "Product", "Service", "Partnership", "Contact Us"],
+    "menu": [
+        {
+            "menu": "About Us",
+            "path": "about"
+        },
+        {
+            "menu": "Product",
+            "path": "/"
+        },
+        {
+            "menu": "Service",
+            "path": "/"
+        },
+        {
+            "menu": "Partnership",
+            "path": "/"
+        },
+        {
+            "menu": "Contact Us",
+            "path": "contact"
+        }
+    ],
     "logo": {
         "goodlife": "assets/goodlife-logo.png",
         "goodlifeWhite": "assets/goodlife-white-logo.png"
