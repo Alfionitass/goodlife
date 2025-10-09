@@ -92,6 +92,9 @@
    .form-input:focus ~ .form-label, .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
     @apply transition-all duration-200 ease-in top-[-0.5rem] left-3 text-sm text-brand-primary-dark bg-white
    }
+   .form-error {
+    @apply absolute mt-12 text-sm text-brand-secondary-light text-left
+   }
    .form-btn {
     @apply bg-brand-secondary-dark text-white uppercase w-auto md:w-96 h-12
    }
