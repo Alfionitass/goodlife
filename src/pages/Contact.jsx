@@ -1,11 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import { FormInput, TextArea } from "../components/FormInput";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [question, setQuestion] = useState("");
+  const [errorName, setErrorName] = useState("");
+  const [errorEmail, setErrorEmail] = useState("");
+  const [errorQuestion, setErrorQuestion] = useState("");
   const form = useRef();
 
   useEffect(() => {
@@ -14,35 +18,75 @@ export default function Contact() {
 
   const handleNameChange = (e) => {
     setName(e.target.value);
+    if (errorName) {
+      setErrorName("")
+    }
   };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+    if (errorEmail) {
+      setErrorEmail("")
+    }
   };
 
   const handleQuestionChange = (e) => {
     setQuestion(e.target.value);
+    if (errorQuestion) {
+      setErrorQuestion("")
+    }
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  // }
+  const validateName = () => {
+    if (name.trim().length === 0) {
+      setErrorName("Name cannot be empty or contain only whitespace.")
+      return false;
+    } 
+    return true;
+  };
+
+  const validateEmail = () => {
+    if (email.trim().length === 0) {
+      setErrorEmail("Email cannot be empty or contain only whitespace.");
+      return false;
+    }
+    return true;
+  };
+
+  const validateQuestion = () => {
+    if (question.trim().length === 0) {
+      setErrorQuestion("Question cannot be empty or contain only whitespace.");
+      return false;
+    }
+    return true;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service
-    emailjs
-      .sendForm("service_fexvp2r", "template_mlvdx48", form.current, {
-        publicKey: "39t47ljJ1-6XXmBoo",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        },
-      );
+    if (validateName() && validateEmail() && validateQuestion()) {
+      emailjs
+        .sendForm("service_fexvp2r", "template_mlvdx48", form.current, {
+          publicKey: "39t47ljJ1-6XXmBoo",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            Swal.fire({
+              title: "Question Submitted Successfully",
+              text: "Your submission has been received. Our team will get back to you soon.",
+              icon: "success",
+            });
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            Swal.fire({
+              title: "Request Failed",
+              text: "An unexpected error occurred. Our team has been notified. Please try again.",
+              icon: "error",
+            });
+          },
+        );
+    }
   };
 
   return (
@@ -60,15 +104,14 @@ export default function Contact() {
         </p>
       </div>
       <form className="grid" ref={form} onSubmit={handleSubmit}>
-        {/* <form className="grid" action="https://formsubmit.co/nanakimm345@gmail.com" method="POST"> */}
-        {/* <form className="grid"> */}
         <FormInput
           type="text"
           children="name"
           label="Name"
           value={name}
           handleChange={handleNameChange}
-          className="md:justify-self-center mb-4"
+          className={`md:justify-self-center ${errorName ? 'mb-14 md:mb-8' : 'mb-4'}`}
+          error={errorName}
         />
         <FormInput
           type="email"
@@ -76,14 +119,16 @@ export default function Contact() {
           label="E-mail"
           value={email}
           handleChange={handleEmailChange}
-          className="md:justify-self-center mb-4"
+          className={`md:justify-self-center ${errorEmail ? 'mb-14 md:mb-8' : 'mb-4'}`}
+          error={errorEmail}
         />
         <TextArea
           children="message"
           label="Question"
           value={question}
           handleChange={handleQuestionChange}
-          className="md:justify-self-center mb-4 h-48"
+          className={`md:justify-self-center h-48 ${errorQuestion ? 'mb-14 md:mb-8' : 'mb-4'}`}
+          error={errorQuestion}
         />
         <button type="submit" className="form-btn md:justify-self-center">
           Submit

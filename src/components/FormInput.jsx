@@ -5,6 +5,7 @@ export const FormInput = ({
   value,
   handleChange,
   className,
+  error
 }) => {
   return (
     <div className={`form-container ${className}`}>
@@ -18,16 +19,16 @@ export const FormInput = ({
         autoComplete="off"
         value={value}
         onChange={handleChange}
-        required
       />
       <label htmlFor={`form ${children}`} className="form-label">
         {label}
       </label>
+      {error && <p className="form-error">{error}</p>}
     </div>
   );
 };
 
-export const TextArea = ({ children, label, value, handleChange, className }) => {
+export const TextArea = ({ children, label, value, handleChange, className, error }) => {
   return (
     <div className={`form-container ${className}`}>
       <textarea
@@ -38,11 +39,11 @@ export const TextArea = ({ children, label, value, handleChange, className }) =>
         className="form-input"
         value={value}
         onChange={handleChange}
-        required
       ></textarea>
       <label htmlFor="form-body" className="form-label">
         {label}
       </label>
+      {error && <p className="form-error mt-48">{error}</p>}
     </div>
   );
 };
