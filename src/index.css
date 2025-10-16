@@ -72,7 +72,7 @@
     @apply text-sm text-left;
   } */
    .btn-red {
-    @apply bg-brand-secondary-dark hover:bg-brand-primary-dark rounded-full px-8 py-3
+    @apply text-white text-xs md:text-base bg-brand-secondary-dark hover:bg-brand-primary-dark rounded-full px-4 md:px-8 py-3 w-auto md:w-max
    }
    .form-container {
     @apply relative w-auto md:w-96 h-12
