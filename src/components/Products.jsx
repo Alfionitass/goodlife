@@ -1,6 +1,7 @@
 import { CardContent, CardHeader, CardBody, CardFooter } from "./Card";
 
 export function Products({ products }) {
+  console.log("products", products)
 
   return (
     <div className="flex flex-col my-8">
