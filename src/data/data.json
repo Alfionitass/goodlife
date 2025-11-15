@@ -22,45 +22,19 @@
         }
     ],
     "logo": {
-        "goodlife": "assets/goodlife-logo.png",
-        "goodlifeWhite": "assets/goodlife-white-logo.png"
+        "goodlife": "/assets/goodlife-logo.png",
+        "goodlifeWhite": "/assets/goodlife-white-logo.png"
     },
     "banner": [
         {
             "title": "Smart Storage",
-            "image": "assets/banner-1.png",
+            "image": "/assets/banner-1.png",
             "imgAlt": "Banner 1"
         },
         {
             "title": "One Stop for All Things Home",
             "image": "assets/banner-2.png",
             "imgAlt": "Banner 2"
-        }
-    ],
-    "products": [
-        {
-            "image": "assets/smart-storage.png",
-            "alt": "Smart Storage",
-            "title": "Smart Storage",
-            "desc": "Elegant, practical, and versatile — a smart storage solution for your modern space."
-        },
-        {
-            "image": "assets/smart-home-appliance.png",
-            "alt": "Smart Home Appliance",
-            "title": "Smart Home Appliance",
-            "desc": "Innovative appliances for a connected lifestyle."
-        },
-        {
-            "image": "assets/gadget-accessories.png",
-            "alt": "Gadget Accessories",
-            "title": "Gadget Accessories",
-            "desc": "Elevate your gadget experience with next-level accessories"
-        },
-        {
-            "image": "assets/arti-q.png",
-            "alt": "Arti-Q Powerbank",
-            "title": "Arti-Q Powerbank",
-            "desc": "Portable power for your nonstop lifestyle."
         }
     ],
     "slides": [
@@ -80,29 +54,33 @@
         }
     ],
     "servicesBanner": {
-        "img": "assets/services.png",
+        "img": "/assets/services.png",
         "alt": "Services Banner"
     },
     "onlineStore": [
         {
-            "imgSrc": "assets/logo-tiktokshop.png",
+            "imgSrc": "/assets/logo-tiktokshop.png",
             "alt": "Tiktok Shop"
         },
         {
-            "imgSrc": "assets/logo-tokopedia.png",
+            "imgSrc": "/assets/logo-tokopedia.png",
             "alt": "Tokopedia"
         },
         {
-            "imgSrc": "assets/logo-shopee.png",
+            "imgSrc": "/assets/logo-shopee.png",
             "alt": "Shopee"
         },
         {
-            "imgSrc": "assets/logo-toco.png",
+            "imgSrc": "/assets/logo-toco.png",
             "alt": "Toco"
         }
     ],
     "newsBanner": {
-        "img": "assets/newsletter.png",
+        "img": "/assets/newsletter.png",
         "alt": "Newsletter Banner"
+    },
+    "whatsapp": {
+        "imgSrc": "",
+        "alt": "WhatsApp"
     }
 }
