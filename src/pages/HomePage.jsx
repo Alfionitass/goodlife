@@ -6,12 +6,13 @@ import { Shop } from "../components/Shop";
 import { Newsletter } from "../components/Newsletter";
 import { FeatureWithIcon } from "../components/FeatureWithIcon";
 import data from "../data/data.json";
+import { products } from "../data/product";
 
 export default function HomePage() {
   return (
     <>
       <Banner banner={data.banner} />
-      <Products products={data.products} />
+      <Products products={products} />
       <ImageSlider slides={data.slides} />
       <CardWithImage data={data.servicesBanner} />
       <Shop onlineStore={data.onlineStore} />

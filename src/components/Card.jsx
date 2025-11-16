@@ -1,6 +1,6 @@
 export const CardContent = ({ children, className, key }) => {
     return (
-        <div key={key} className={`relative flex flex-col bg-clip-border rounded-xl shadow-md w-full ${className}`}>
+        <div key={key} className={`relative flex flex-col bg-clip-border shadow-md w-full ${className}`}>
             {children}
         </div>
     )
