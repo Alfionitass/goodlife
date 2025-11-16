@@ -28,6 +28,7 @@ const NavList = ({ menu, handleLinkClick }) => {
 
 export function NavBar({ menu, logo }) {
   const [openNav, setOpenNav] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleLinkClick = () => {
     setOpenNav(false); // close the nav after clicking a menu item
@@ -39,13 +40,27 @@ export function NavBar({ menu, logo }) {
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
 
+    // Detect scroll to change background color
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("resize", handleWindowResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-6 py-3 shadow-none">
+    <Navbar
+      className={`mx-auto sticky top-0 z-10 h-max max-w-full rounded-none px-6 py-3 shadow-none overflow-scroll transition-all duration-300 ${isScrolled ? "bg-red-50 border-red-50" : "bg-transparent"}`}
+    >
       <div className="flex flex-row items-center justify-between text-blue-gray-900 lg:flex-col">
         <Link to="/">
           <img src={logo} alt="Goodlife Logo" width="153" height="51" />
