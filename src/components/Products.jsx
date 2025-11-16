@@ -3,7 +3,6 @@ import { CardContent, CardHeader, CardBody, CardFooter } from "./Card";
 import { slugify } from "../utils/utils";
 
 export function Products({ products }) {
-
   return (
     <div className="flex flex-col my-8">
       <h4 className="mb-4 text-2xl md:text-3xl font-black">
@@ -12,7 +11,7 @@ export function Products({ products }) {
       <div className="relative overflow-auto">
         <div className="md:flex gap-4 grid grid-cols-2 mb-4">
           {products.map((item, id) => (
-            <CardContent key={id} className="gap-4 rounded-xl">
+            <CardContent key={id} className="gap-4 rounded-xl bg-white">
               <CardHeader>
                 <img
                   src={item.image}
@@ -29,9 +28,9 @@ export function Products({ products }) {
                 </h6>
               </CardBody>
               <CardFooter className="p-3 md:p-6">
-                <button className="btn-red">
-                  <Link to={`${slugify(item.title)}`} state={item}>Explore Collection</Link>
-                </button>
+                <Link to={`${slugify(item.title)}`} state={item}>
+                  <button className="btn-red">Explore Collection</button>
+                </Link>
               </CardFooter>
             </CardContent>
           ))}

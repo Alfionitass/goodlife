@@ -178,7 +178,7 @@ export default function Products() {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {currentItems?.map((item, id) => (
-                  <CardContent key={id}>
+                  <CardContent key={id} className="bg-white">
                     <Link to={slugify(item.name)}>
                       <CardHeader className="!mx-0 w-auto h-40 sm:h-48 desktop-mid:h-56 xl:h-80">
                         <img
