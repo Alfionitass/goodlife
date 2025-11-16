@@ -59,7 +59,7 @@ export function NavBar({ menu, logo }) {
 
   return (
     <Navbar
-      className={`mx-auto sticky top-0 z-10 h-max max-w-full rounded-none px-6 py-3 shadow-none overflow-scroll transition-all duration-300 ${isScrolled ? "bg-red-50 border-red-50" : "bg-transparent"}`}
+      className={`mx-auto sticky top-0 z-10 h-max max-w-full rounded-none px-6 py-3 shadow-none overflow-scroll transition-all duration-300 ${isScrolled ? "bg-red-50 border-red-50" : "bg-transparent border-transparent"}`}
     >
       <div className="flex flex-row items-center justify-between text-blue-gray-900 lg:flex-col">
         <Link to="/">
