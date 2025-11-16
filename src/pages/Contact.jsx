@@ -90,8 +90,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="py-8 px-14">
-      <h4 className="text-brand-primary-dark text-2xl md:text-3xl">
+    <div className="py-8 px-10 mx-auto max-w-screen-lg">
+      <h4 className="text-brand-primary-dark text-2xl md:text-3xl uppercase">
         Contact us
       </h4>
       <div className="text-left my-8 md:my-10 md:px-20">

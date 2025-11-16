@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <div className="py-8 px-14">
-      <h4 className="text-brand-primary-dark text-2xl md:text-3xl">About us</h4>
+    <div className="py-8 px-10 mx-auto max-w-screen-lg">
+      <h4 className="text-brand-primary-dark text-2xl md:text-3xl uppercase">About us</h4>
       <div className="text-left my-8 md:my-10 md:px-20">
         <div className="mb-10">
-          <h6 className="font-lg md:font-xl uppercase mb-5">Who We Are?</h6>
+          <h6 className="font-lg md:font-xl mb-5">Who We Are?</h6>
           <p className="mb-4">
             At <span className="font-bold">Good Life,</span> we believe that
             every product has the potential to inspire, connect, and bring value
@@ -33,7 +33,7 @@ export default function About() {
           </p>
         </div>
         <div className="mb-10">
-          <h6 className="font-lg md:font-xl uppercase mb-5">Our Mission</h6>
+          <h6 className="font-lg md:font-xl mb-5">Our Mission</h6>
           <p>
             To bridge global brands with Indonesian consumers by combining
             retail expertise and marketing innovation, ensuring products don’t
@@ -41,7 +41,7 @@ export default function About() {
           </p>
         </div>
         <div className="mb-10">
-          <h6 className="font-lg md:font-xl uppercase mb-5">Our Vision</h6>
+          <h6 className="font-lg md:font-xl mb-5">Our Vision</h6>
           <p className="mb-4">
             To be the trusted partner for international and local brands in
             Indonesia, creating a <span className="font-bold">good life</span>{" "}
