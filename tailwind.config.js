@@ -8,10 +8,11 @@ export default withMT({
   theme: {
     extend: {
       screens: {
-        // sm: "640px",
-        // md: "768px",
-        // lg: "1024px",
-        "desktop-mid": { "min": "960px", "max": "1205px"},
+        // material tailwind
+        // sm: "540px",
+        // md: "720px",
+        // lg: "960px",
+        "desktop-mid": { min: "960px", max: "1205px" },
       },
       fontFamily: {
         // custom: ["Gotham", "Arial", "sans-serif"], // 'custom' is your utility class name
