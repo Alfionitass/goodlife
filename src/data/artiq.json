@@ -1,181 +1,505 @@
 [
     {
         "image": "/assets/kitchen-storage.jpg",
-        "alt": "Magalum Moon Ash",
-        "name": "Magalum Moon Ash",
-        "subName": "Power Bank",
-        "desc": "15W magnetic suction wireless charging\n10000mAh, Aerodynamic regenerated aluminum\nSupport USB-C&USB-A output",
-        "subDesc": "",
+        "alt": "Power Bank 15W Magnetic - MagAlum Moon Ash",
+        "name": "Power Bank 15W Magnetic - MagAlum Moon Ash",
+        "desc": "Power bank premium berbahan recycled aluminium, dilengkapi magnetic wireless charging hingga 15W. Desain elegan, kuat, dan ramah lingkungan.",
+        "subDesc": [
+            {
+                "title": "Kapasitas",
+                "details": "10000mAh / 19.25Wh"
+            },
+            {
+                "title": "Wireless",
+                "details": "5W / 7.5W / 10W / 15W"
+            },
+            {
+                "title": "Input",
+                "details": "5V/3A, 9V/2.2A (USB-C)"
+            },
+            {
+                "title": "Output",
+                "details": "USB-A & USB-C (5V/3A, 9V/2.2A)"
+            },
+            {
+                "title": "Berat",
+                "details": "209.5 g | Ukuran: 11x7x2 cm"
+            },
+            {
+                "title": "Material",
+                "details": "Recycled Aluminium"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/1.png",
-        "alt": "Oceanpack Stonemoss",
-        "name": "Oceanpack Stonemoss",
-        "subName": "Power Bank",
-        "desc": "Made from ocean plastic\nCompact and lightweight design\nDual USB-C fast charging",
-        "subDesc": "", 
+        "alt": "Power Bank 10000mAh Built-in USB-C + LCD (DP101U-R-PD)",
+        "name": "Power Bank 10000mAh Built-in USB-C + LCD (DP101U-R-PD)",
+        "desc": "Power bank lengkap dengan kabel USB-C built-in dan layar LCD digital, praktis tanpa perlu bawa kabel tambahan.",
+        "subDesc": [
+            {
+                "title": "Kapasitas",
+                "details": "10000mAh / 38.5Wh"
+            },
+            {
+                "title": "Input USB-C",
+                "details": "5V/3A, 9V/2A"
+            },
+            {
+                "title": "Built-in Cable Input",
+                "details": "5V/3A, 9V/2A"
+            },
+            {
+                "title": "Output USB-C",
+                "details": "5V/3A, 9V/2.22A, 12V/1.67A"
+            },
+            {
+                "title": "Output USB-A",
+                "details": "5V-12V berbagai mode"
+            },
+            {
+                "title": "Ukuran",
+                "details": "72x108.6x17 mm"
+            },
+            {
+                "title": "Material",
+                "details": "Recycled PC/ABS/TPE"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/3.png",
-        "alt": "Voltskin Moody Moon",
-        "name": "Voltskin Moody Moon",
-        "subName": "Power Bank",
-        "desc": "Eco-conscious style. Perfect for eco design lovers\nFast charge. Light carry. Thoughtful materials\nSustainable finish. Instant power",
-        "subDesc": "", 
+        "alt": "Power Bank Oceanpack - Arctic Haze",
+        "name": "Power Bank Oceanpack - Arctic Haze",
+        "desc": "Power bank eco-friendly berbahan ocean plastic. Cocok untuk penggunaan ringan sehari-hari.",
+        "subDesc": [
+            {
+                "title": "Kapasitas",
+                "details": "5000mAh"
+            },
+            {
+                "title": "Ukuran",
+                "details": "9.3x11.3x2 cm"
+            },
+            {
+                "title": "Berat",
+                "details": "133 g"
+            },
+            {
+                "title": "Warna",
+                "details": "White-Blue"
+            },
+            {
+                "title": "",
+                "details": "Type-C I/O + 2 USB"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/kitchen-storage.jpg",
-        "alt": "Voltskin Terra Brown",
-        "name": "Voltskin Terra Brown",
-        "subName": "Power Bank",
-        "desc": "Eco-conscious style. Perfect for eco design lovers\nFast charge. Light carry. Thoughtful materials\nSustainable finish. Instant power",
-        "subDesc": "",
+        "alt": "Power Bank Oceanpack - Stonemoss",
+        "name": "Power Bank Oceanpack - Stonemoss",
+        "desc": "Varian ocean plastic berwarna white-green. Ringkas dan ramah lingkungan.",
+        "subDesc": [
+            {
+                "title": "Kapasitas",
+                "details": "5000mAh"
+            },
+            {
+                "title": "Ukuran",
+                "details": "9.3x11.3x2 cm"
+            },
+            {
+                "title": "Berat",
+                "details": "133 g"
+            },
+            {
+                "title": "",
+                "details": "Type-C I/O + 2 USB"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/1.png",
-        "alt": "Voltbridge Frosted Ash",
-        "name": "Voltbridge Frosted Ash",
-        "subName": "Power Bank",
-        "desc": "Eco-conscious style. Perfect for eco design lovers\n10000mAh,Recycled PC/ABS/TPE/Tin\nSustainable finish. Instant power",
-        "subDesc": "", 
+        "alt": "Power Bank Voltskin - Terra Brown",
+        "name": "Power Bank Voltskin - Terra Brown",
+        "desc": "Power bank 5000mAh dengan casing leather premium dan ABS. Mendukung wireless charging 5–15W.",
+        "subDesc": [
+            {
+                "title": "Ukuran",
+                "details": "10x6.5x1.5 cm"
+            },
+            {
+                "title": "Wireless",
+                "details": "5-15W"
+            },
+            {
+                "title": "Warna",
+                "details": "Terra Brown"
+            },
+            {
+                "title": "",
+                "details": "PD 20W USB-C I/O"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/3.png",
-        "alt": "Bamboo Tunes",
-        "name": "Bamboo Tunes",
-        "subName": "TWS",
-        "desc": "Bamboo + recycled ABS, environmentally friendly design\nLightweight and portable, smart touch",
-        "subDesc": "", 
+        "alt": "Power Bank Voltskin - Moody Moon",
+        "name": "Power Bank Voltskin - Moody Moon",
+        "desc": "Varian warna Moody Moon dengan material leather & ABS premium.",
+        "subDesc": [
+            {
+                "title": "Kapasitas",
+                "details": "5000mAh"
+            },
+            {
+                "title": "Ukuran",
+                "details": "10x6.5x1.5 cm"
+            },
+            {
+                "title": "Wireless",
+                "details": "5-15W"
+            },
+            {
+                "title": "",
+                "details": "PD 20W USB-C I/O"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/kitchen-storage.jpg",
-        "alt": "Bamboo Tunes Eggshell Shock",
-        "name": "Bamboo Tunes Eggshell Shock",
-        "subName": "TWS",
-        "desc": "Bamboo + recycled ABS, environmentally friendly design\nLightweight and portable, smart touch",
-        "subDesc": "",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "Hushbuds Clacier White",
-        "name": "Hushbuds Clacier White",
-        "subName": "TWS",
-        "desc": "Hybrid ANC for Crystal-Clear Calls\nLightweight and portable, smart touch\nEco-Conscious Tech, Responsible Sound",
-        "subDesc": "", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
-        "alt": "Magmount Nimbus Grey",
-        "name": "Magmount Nimbus Grey",
-        "subName": "Car Charger",
-        "desc": "Sustainable Materials — Recycled PC/ABS & metal\n15W Fast Wireless — Drop & charge navigation\nUltra-Light & Secure — 85g, anti-slip grip",
-        "subDesc": "", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/kitchen-storage.jpg",
-        "alt": "Arcdoc 3-in-1 Charging Hub",
-        "name": "Arcdoc 3-in-1 Charging Hub",
-        "subName": "Wireless Charger",
-        "desc": "Anodized alumina housing, Qi certified\nAnodized alumina housing, Qi certified",
-        "subDesc": "",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "Trivolt 65W Gan Charger",
-        "name": "Trivolt 65W Gan Charger",
-        "subName": "Wall adapter",
-        "desc": "Multi-port fast charging, support global voltage\nUltra-thin design, travel essential",
-        "subDesc": "", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
-        "alt": "Trivolt 33W Gan Charger",
-        "name": "Trivolt 33W Gan Charger",
-        "subName": "Wall adapter",
-        "desc": "33W Lightning-Fast Charging, Compact and Portable\nDual A+C Ports, Universal Compatibility\nPPS Protocol, Optimized for Android",
-        "subDesc": "", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "Trivolt 65W Gan Charger",
-        "name": "Trivolt 65W Gan Charger",
-        "subName": "Wall adapter",
-        "desc": "Lightning-Fast 65W Max Charging\nSmart 3-Port Power Distribution\nUniversal Voltage for Global Travel",
-        "subDesc": "", 
+        "alt": "TWS Bamboo Syng",
+        "name": "TWS Bamboo Syng",
+        "desc": "Earbuds eco-friendly berbahan ABS + bamboo. Desain compact dan ringan.",
+        "subDesc": [
+            {
+                "title": "Material",
+                "details": "ABS + Bamboo"
+            },
+            {
+                "title": "Ukuran",
+                "details": "55.7x48x23.5 mm"
+            },
+            {
+                "title": "Berat",
+                "details": "35.8 g"
+            },
+            {
+                "title": "Warna",
+                "details": "Eggshell Shock"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/kitchen-storage.jpg",
-        "alt": "Globe Key Harvest White",
-        "name": "Globe Key Harvest White",
-        "subName": "Travel adapter",
-        "desc": "100W High Power, Compact and Portable\n4-Port Smart Charging, Flexible for All Devices\nMulti-Scenario Mode, Efficient Power Distribution",
-        "subDesc": "",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "A-C Sagestorm",
-        "name": "A-C Sagestorm",
-        "subName": "Charging cable",
-        "desc": "Durable Braided Cable\nEco-Friendly Choice\nPowerful Fast Charging",
-        "subDesc": "", 
+        "alt": "TWS Bamboo Tunes",
+        "name": "TWS Bamboo Tunes",
+        "desc": "Earbuds dengan aksen bamboo dan kualitas audio stabil. Desain natural & eco-friendly.",
+        "subDesc": [
+            {
+                "title": "Material",
+                "details": "ABS + Bamboo accents"
+            },
+            {
+                "title": "Ukuran",
+                "details": "60x60x30.7 mm"
+            },
+            {
+                "title": "Berat",
+                "details": "42.3 g"
+            },
+            {
+                "title": "Warna",
+                "details": "Eggshell Shock"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/3.png",
-        "alt": "C-C Sagestorm",
-        "name": "C-C Sagestorm",
-        "subName": "Charging cable",
-        "desc": "Durable Braided Cable\nEco-Friendly Choice\nPowerful Fast Charging",
-        "subDesc": "", 
+        "alt": "TWS TW78-R",
+        "name": "TWS TW78-R",
+        "desc": "Earbuds berbahan recycled ABS dengan desain ringkas.",
+        "subDesc": [
+            {
+                "title": "Material",
+                "details": "Recycled ABS"
+            },
+            {
+                "title": "Ukuran",
+                "details": "55x25x47 mm"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
-        "image": "/assets/3.png",
-        "alt": "C-L Sagestorm",
-        "name": "C-L Sagestorm",
-        "subName": "Charging cable",
-        "desc": "Durable Braided Cable\nEco-Friendly Choice\nPowerful Fast Charging",
-        "subDesc": "", 
+        "image": "/assets/kitchen-storage.jpg",
+        "alt": "Car Charger Mount 15W",
+        "name": "Car Charger Mount 15W",
+        "desc": "Holder mobil sekaligus wireless charger hingga 15W. Material ramah lingkungan.",
+        "subDesc": [
+            {
+                "title": "Material",
+                "details": "Recycled PC/ABS/Tin"
+            },
+            {
+                "title": "Input USB-C",
+                "details": "9V/2.22A"
+            },
+            {
+                "title": "Wireless Output",
+                "details": "Up to 15W"
+            },
+            {
+                "title": "Ukuran",
+                "details": "87x88x88 mm"
+            },
+            {
+                "title": "Berat",
+                "details": "85.2 g"
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/1.png",
-        "alt": "Omnicable Sagestorm",
-        "name": "Omnicable Sagestorm",
-        "subName": "Charging cable",
-        "desc": "Durable Braided Cable\nEco-Friendly Choice\nOne Cable, All Devices",
-        "subDesc": "", 
+        "alt": "Arcdoc Charging Hub - Lunar White",
+        "name": "Arcdoc Charging Hub - Lunar White",
+        "desc": "Charging hub all-in-one berbahan aluminium premium.",
+        "subDesc": [
+            {
+                "title": "Warna",
+                "details": "Lunar White"
+            },
+            {
+                "title": "Ukuran",
+                "details": "129x11x152 mm"
+            },
+            {
+                "title": "Berat",
+                "details": "210 g"
+            },
+            {
+                "title": "Surface",
+                "details": "Anodized Aluminium"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/3.png",
+        "alt": "Arcdoc Charging Hub - Shadow Black",
+        "name": "Arcdoc Charging Hub - Shadow Black",
+        "desc": "Varian warna Shadow Black dari hub premium Arcdoc.",
+        "subDesc": [
+            {
+                "title": "Ukuran",
+                "details": "129x11x15 mm"
+            },
+            {
+                "title": "Berat",
+                "details": "210 g"
+            },
+            {
+                "title": "Material",
+                "details": "Aluminium Alloy"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Smart Socket - Global Key",
+        "name": "Smart Socket - Global Key",
+        "desc": "Smart socket compact untuk berbagai kebutuhan travel & rumah.",
+        "subDesc": [
+            {
+                "title": "Rating",
+                "details": "100-250V ~10A"
+            },
+            {
+                "title": "Max Power",
+                "details": "1000W"
+            },
+            {
+                "title": "Port Output (A1/C1/C2/C3)",
+                "details": "5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A"
+            },
+            {
+                "title": "Berat",
+                "details": "202 g"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/kitchen-storage.jpg",
+        "alt": "Trivolt - Midnight Black",
+        "name": "Trivolt - Midnight Black",
+        "desc": "Adaptor dengan banyak opsi daya, mendukung pengisian cepat.",
+        "subDesc": [
+            {
+                "title": "Warna",
+                "details": "Midnight Black"
+            },
+            {
+                "title": "Input",
+                "details": "AC 100-240V 50/60Hz"
+            },
+            {
+                "title": "",
+                "details": "Output lengkap Type-C & USB-A berbagai mode"
+            },
+            {
+                "title": "",
+                "details": "33W A+C + opsi 65W"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Trivolt - Echo White",
+        "name": "Trivolt - Echo White",
+        "desc": "Varian warna putih dengan kemampuan pengisian cepat multi-port",
+        "subDesc": [
+            {
+                "title": "Warna",
+                "details": "Echo White"
+            },
+            {
+                "title": "",
+                "details": "65W A+C+C"
+            },
+            {
+                "title": "",
+                "details": "PPS & Output lengkap Type-C + USB-A"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/3.png",
+        "alt": "Trivolt Slim",
+        "name": "Trivolt Slim",
+        "desc": "Adaptor ringkas dengan daya kuat hingga 65W.",
+        "subDesc": [
+            {
+                "title": "Input",
+                "details": "110-240V"
+            },
+            {
+                "title": "Output Type-C",
+                "details": "hingga 65W"
+            },
+            {
+                "title": "Output USB-A",
+                "details": "hingga 18W"
+            },
+            {
+                "title": "Mode Gabungan",
+                "details": "45W + 12W"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/3.png",
+        "alt": "Cable C-C Sagestorm",
+        "name": "Cable C-C Sagestorm",
+        "desc": "Kabel braided USB-C ke USB-C, mendukung fast charging 60W.",
+        "subDesc": [
+            {
+                "title": "Panjang",
+                "details": "1.5m & 2m"
+            },
+            {
+                "title": "Output",
+                "details": "60W"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Cable A-C Sagestorm",
+        "name": "Cable A-C Sagestorm",
+        "desc": "Kabel braided USB-A ke USB-C fast charging.",
+        "subDesc": [
+            {
+                "title": "Panjang",
+                "details": "1.5m"
+            },
+            {
+                "title": "Output",
+                "details": "3A"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Cable C-L Sagestorm",
+        "name": "Cable C-L Sagestorm",
+        "desc": "Kabel USB-C ke Lightning fast charging 27W.",
+        "subDesc": [
+            {
+                "title": "Panjang",
+                "details": "1.5m"
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Omni Cable - Sage Storm",
+        "name": "Omni Cable - Sage Storm",
+        "desc": "Kabel all-in-one untuk berbagai perangkat.",
+        "subDesc": [
+            {
+                "title": "C to C",
+                "details": "100W"
+            },
+            {
+                "title": "C to Lightning",
+                "details": "5V/2A"
+            },
+            {
+                "title": "C to Micro USB",
+                "details": "2A"
+            },
+            {
+                "title": "Panjang",
+                "details": "2m"
+            }
+        ],
         "price": "",
         "skuNo": ""
     }

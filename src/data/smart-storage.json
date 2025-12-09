@@ -3,9 +3,22 @@
         "image": "/assets/kitchen-storage.jpg",
         "alt": "Magnetic Wall Board",
         "name": "Magnetic Wall Board",
-        "desc": "Material: Carbon steel\nSize: 400x300x6 mm\nColor: White",
-        "subDesc": "This magnetic wall board mounts on the wall, creating a surface for magnets.",
-        "price": "",
+        "desc": "Magnetic Wall Board terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "435x350x335 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 220000,
         "skuNo": "",
         "whatsapp": "",
         "marketplace": [
@@ -35,9 +48,22 @@
         "image": "/assets/1.png",
         "alt": "Magnetic Hook Rack",
         "name": "Magnetic Hook Rack",
-        "desc": "Material: Carbon steel\nSize: 248x316x50 mm\nColor: White",
-        "subDesc": "Magnetic hook rack that easily attaches to metal surfaces, keeping utensils, towels, or keys neatly within reach.",
-        "price": "",
+        "desc": "Magnetic Hook Rack terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "275x180x140 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 130000,
         "skuNo": "",
         "marketplace": [
             {
@@ -64,64 +90,89 @@
     },
     {
         "image": "/assets/3.png",
-        "alt": "Magnetic Shelf",
-        "name": "Magnetic Shelf",
-        "desc": "Material: Carbon steel\nSize: 248x98x80 mm\nColor: White",
-        "subDesc": "Magnetic shelf adds extra storage in the kitchen or bathroom for spices or small essentials.",
-        "price": "",
+        "alt": "Magnetic Storage Box",
+        "name": "Magnetic Storage Box",
+        "desc": "Magnetic Storage Box terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "290x260x370 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 154000,
         "skuNo": ""
     },
     {
         "image": "/assets/kitchen-storage.jpg",
-        "alt": "Magnetic Layer Rack Hook",
-        "name": "Magnetic Layer Rack Hook",
-        "desc": "Material: Carbon steel\nSize: 248x80x80 mm\nColor: White",
-        "subDesc": "Multi-tier magnetic hook rack keeps items organized in layers and prevents tangling.",
-        "price": "",
+        "alt": "Magnetic Tissue Box",
+        "name": "Magnetic Tissue Box",
+        "desc": "Magnetic Tissue Box terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "305x300x225 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 191000,
         "skuNo": ""
     },
     {
         "image": "/assets/1.png",
         "alt": "Magnetic Pot Lid Holder",
         "name": "Magnetic Pot Lid Holder",
-        "desc": "Material: Carbon steel\nSize: 160x50x72 mm\nColor: White",
-        "subDesc": "Magnetic pot lid holder secures to metal surfaces to hold lids upright while cooking.",
-        "price": "",
+        "desc": "Magnetic Pot Lid Holder terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "280x260x190 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 130000,
         "skuNo": ""
     },
     {
         "image": "/assets/3.png",
         "alt": "Magnetic Hooks",
         "name": "Magnetic Hooks",
-        "desc": "Material: Carbon steel\nSize: 45x29x51 mm\nColor: White",
-        "subDesc": "Magnetic hooks quickly attach to metal surfaces for hanging everyday essentials.",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/kitchen-storage.jpg",
-        "alt": "Magnetic Tissue Box Holder",
-        "name": "Magnetic Tissue Box Holder",
-        "desc": "Material: Carbon steel\nSize: 130x83x192 mm\nColor: White",
-        "subDesc": "Magnetic tissue box holder stores not only tissues but also cling film rolls, garbage bags, and other slim items.",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "Magnetic Storage Box",
-        "name": "Magnetic Storage Box",
-        "desc": "Material: PP Plastic\nSize: 168x88x118 mm\nColor: White",
-        "subDesc": "Magnetic storage box sticks to fridges or metal cabinets for storing notes, keys and other small items.",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
-        "alt": "Under Shelf Basket",
-        "name": "Under Shelf Basket",
-        "desc": "Material: PP Plastic\nSize: 394x257x108 mm\nColor: White",
-        "subDesc": "Under shelf basket slides easily beneath shelves to create extra storage, perfect for holding dishes, spice jars, or small essentials, maximizing cabinet space.",
+        "desc": "Magnetic Hooks terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
@@ -129,80 +180,197 @@
         "image": "/assets/kitchen-storage.jpg",
         "alt": "Over Cabinet Door Towel Bar",
         "name": "Over Cabinet Door Towel Bar",
-        "desc": "Material: Carbon steel\nSize: 240x71x68 mm\nColor: White",
-        "subDesc": "Over cabinet door towel bar installs without drilling, ideal for hanging towels, dishcloths, or light items, keeping your kitchen or bathroom neat and organized.",
-        "price": "",
+        "desc": "Over Cabinet Door Towel Bar terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "420x270x320 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 100000,
         "skuNo": ""
     },
     {
         "image": "/assets/1.png",
-        "alt": "Hanging Paper Towel Holder",
-        "name": "Hanging Paper Towel Holder",
-        "desc": "Material: Carbon steel\nSize: 251x181x89 mm\nColor: White",
-        "subDesc": "Hanging paper towel holder mounts under cabinets or shelves, offering easy access to tissues while also holding dishcloths, towels, or lightweight kitchen tools for versatile storage.",
-        "price": "",
+        "alt": "Under Shelf Basket",
+        "name": "Under Shelf Basket",
+        "desc": "Under Shelf Basket terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "555x500x420 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 160000,
         "skuNo": ""
     },
     {
         "image": "/assets/3.png",
-        "alt": "Over-Door Hook",
-        "name": "Over-Door Hook",
-        "desc": "Material: Carbon steel+nanmu\nSize: 380x95x315 mm\nColor: White/Grey",
-        "subDesc": "The space behind doors is often overlooked, yet it holds great storage potential. This over-door hook installs without drilling—simply hang it over the door to instantly create extra storage. Towels, clothes, bags, or everyday essentials can beneatly hung without taking up floor space. Place it behind bedroom doors, bathroom doors, or entryway doors to add convenience and order to your daily routines, making storage effortless and discreet.",
-        "price": "",
+        "alt": "2-Tier Kitchen Spice Rack",
+        "name": "2-Tier Kitchen Spice Rack",
+        "desc": "2-Tier Kitchen Spice Rack terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 255000,
         "skuNo": ""
     },
     {
         "image": "/assets/kitchen-storage.jpg",
-        "alt": "Stackable Shoe Rack",
-        "name": "Stackable Shoe Rack",
-        "desc": "Material: Carbon steel\nSize: 667x200x400 mm\nColor: White",
-        "subDesc": "The stackable shoe rack grows with your needs, keeping shoes organized and your entryway clutter-free.",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "4-Tier Adjustable Storage Shelf",
-        "name": "4-Tier Adjustable Storage Shelf",
-        "desc": "Material: Carbon steel\nSize: 562x410x1180 mm\nColor: White",
-        "subDesc": "The 4-tier adjustable storage shelf offers customizable height, making it ideal for versatile storage in the kitchen, bathroom, or utility room.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
-        "alt": "Wall-Mount Bamboo Shelf",
-        "name": "Wall-Mount Bamboo Shelf",
-        "desc": "Material: Carbon steel\nSize: 340x163x105 mm\nColor: White",
-        "subDesc": "The wall-mounted bamboo shelf combines natural texture with function, serving as both storage and a decorative element on your wall. Consider mounting method and wall type based on intended load.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/kitchen-storage.jpg",
-        "alt": "Wall-Mount Bamboo Shelf",
-        "name": "Wall-Mount Bamboo Shelf",
-        "desc": "Material: Carbon steel\nSize: 385x110x75 mm\nColor: White",
-        "subDesc": "Upgraded bamboo wall shelf—natural texture with reinforced support for display and reliable storage. Consider mounting method and wall type based on intended load.",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "Fold-Flat Cabinet Shelf",
-        "name": "Fold-Flat Cabinet Shelf",
-        "desc": "Material: Carbon steel\nSize: 385x235x185 mm\nColor: White",
-        "subDesc": "The fold-flat cabinet shelf expands storage when needed and folds away when not, offering flexible organization.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
         "alt": "Expandable Cabinet Shelf",
         "name": "Expandable Cabinet Shelf",
-        "desc": "Material: Carbon steel\nSize: 445~715x235x185 mm\nColor: White",
-        "subDesc": "The expandable cabinet shelf adjusts to fit different spaces, perfect for holding dishes, spices, or small items with ease.", 
+        "desc": "Expandable Cabinet Shelf terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "475x410x260 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 235000,
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Adjustable Cabinet Shelf",
+        "name": "Adjustable Cabinet Shelf",
+        "desc": "Adjustable Cabinet Shelf terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 270000,
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/3.png",
+        "alt": "Hanging Paper Towel Holder",
+        "name": "Hanging Paper Towel Holder",
+        "desc": "Hanging Paper Towel Holder terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "550x320x405 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 138500,
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/kitchen-storage.jpg",
+        "alt": "Dish Drying Rack",
+        "name": "Dish Drying Rack",
+        "desc": "Dish Drying Rack terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "550x380x465 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 270000,
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Stacking Mug & Stand",
+        "name": "Stacking Mug & Stand",
+        "desc": "Stacking Mug & Stand terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "380x260x285 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 260000,
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/3.png",
+        "alt": "3-Tier Mug & Stand Set",
+        "name": "3-Tier Mug & Stand Set",
+        "desc": "3-Tier Mug & Stand Set terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
@@ -210,107 +378,175 @@
         "image": "/assets/kitchen-storage.jpg",
         "alt": "Kitchen Utensil Holder",
         "name": "Kitchen Utensil Holder",
-        "desc": "Material: Carbon steel\nSize: 102x125x155 mm\nColor: Frosted Black",
-        "subDesc": "The utensil holder keeps spatulas, spoons, and everyday tools in one place, making cooking easier and more efficient.",
-        "price": "",
+        "desc": "Kitchen Utensil Holder terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "355x290x355 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 105000,
         "skuNo": ""
     },
     {
         "image": "/assets/1.png",
-        "alt": "Kitchen Counter Organizer",
-        "name": "Kitchen Counter Organizer",
-        "desc": "Material: Carbon steel\nSize: 225x185x325 mm\nColor: Frosted Black",
-        "subDesc": "The kitchen counter organizer makes use of vertical space, neatly storing jars and utensils while freeing up your countertop.", 
+        "alt": "Wall-Mount Bamboo Shelf",
+        "name": "Wall-Mount Bamboo Shelf",
+        "desc": "Wall-Mount Bamboo Shelf terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "410x290x425 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/3.png",
-        "alt": "Wall Mount Spice Rack Organizer",
-        "name": "Wall Mount Spice Rack Organizer",
-        "desc": "Material: Carbon steel\nSize: 260x230x105 mm\nColor: White/Frosted Black",
-        "subDesc": "The wall mount spice rack turns unused wall space into handy storage, keeping spice jars neatly arranged and within easy reach while cooking.", 
+        "alt": "Over Door Hook",
+        "name": "Over Door Hook",
+        "desc": "Over Door Hook terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": "400x230x415 mm"
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": 175000,
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/kitchen-storage.jpg",
+        "alt": "Wall Shelf Metal Spice Rack",
+        "name": "Wall Shelf Metal Spice Rack",
+        "desc": "Wall Shelf Metal Spice Rack terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/1.png",
+        "alt": "Four-layer Seasoning Rack (Countertop)",
+        "name": "Four-layer Seasoning Rack Set (Countertop)",
+        "desc": "Four-layer Seasoning Rack (Countertop) terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
+        "price": "",
+        "skuNo": ""
+    },
+    {
+        "image": "/assets/3.png",
+        "alt": "Countertop Chopping Board & Knife Holder",
+        "name": "Countertop Chopping Board & Knife Holder",
+        "desc": "Countertop Chopping Board & Knife Holder terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/kitchen-storage.jpg",
-        "alt": "2-Tier Kitchen Spice Organizer Set",
-        "name": "2-Tier Kitchen Spice Organizer Set",
-        "desc": "Material: Carbon steel\nSize: 260x225x215 mm\nColor: White/Frosted Black",
-        "subDesc": "The 2-tier spice organizer maximizes space with layered storage, keeping jars and bottles organized for a smoother cooking routine.",
+        "alt": "Two-layer Dish Rack",
+        "name": "Two-layer Dish Rack",
+        "desc": "Two-layer Dish Rack terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
         "price": "",
         "skuNo": ""
     },
     {
         "image": "/assets/1.png",
-        "alt": "4-Tier Kitchen Spice Rack",
-        "name": "4-Tier Kitchen Spice Rack",
-        "desc": "Material: Carbon steel\nSize: 365x175x460 mm\nColor: White/Frosted Black",
-        "subDesc": "The 4-tier spice rack offers generous capacity to hold a wide variety of spices, helping keep your kitchen tidy and well-organized.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
-        "alt": "Stacking Mug & Stand Set",
-        "name": "Stacking Mug & Stand Set",
-        "desc": "Material: Carbon steel\nSize: 94x94x265 mm\nColor: Gold",
-        "subDesc": "Stacking mug & stand set keeps cups neatly organized in one place, saving counter space while making them easy to grab for everyday use or when entertaining guests.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/kitchen-storage.jpg",
-        "alt": "2-Tier Mug & Stand Set",
-        "name": "2-Tier Mug & Stand Set",
-        "desc": "Material: Carbon steel\nSize: 174x94x236 mm\nColor: Gold",
-        "subDesc": "The 2-tier mug & stand set provides extra capacity with its double-layer design, keeping mugs accessible and well-organized for family use or gatherings.",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "Dinking Glass Holder",
-        "name": "Dinking Glass Holder",
-        "desc": "Material: Carbon steel\nSize: 280x167x150 mm\nColor: Gold\nStyle: Low stand",
-        "subDesc": "The tall drinking glass holder is ideal for organizing and drying taller glasses, keeping them stable, tidy, and always ready for use.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
-        "alt": "Dinking Glass Holder",
-        "name": "Dinking Glass Holder",
-        "desc": "Material: Carbon steel\nSize: 230x142x180 mm\nColor: Gold\nStyle: High stand",
-        "subDesc": "The short drinking glass holder is perfect for everyday cups, with a compact design that saves counter space and keeps glasses within easy reach.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/kitchen-storage.jpg",
-        "alt": "Fold-Flat Dish Drying Rack",
-        "name": "Fold-Flat Dish Drying Rack",
-        "desc": "Material: Carbon steel\nSize: 435x315x207 mm\nColor: Nickel",
-        "subDesc": "A fold-flat drying rack that expands to provide stable support and drainage, then folds away for compact storage. Includes a removable drip tray for easy draining and cleaning.",
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/1.png",
-        "alt": "Dish Drying Rack",
-        "name": "Dish Drying Rack",
-        "desc": "Material: Carbon steel\nSize: 490x255x170 mm\nColor: White",
-        "subDesc": "A classic countertop drying rack with vertical dish slots and a slide-out drip tray, allowing dishes to dry upright while channeling water away from the counter. Sturdy construction for everyday family use.", 
-        "price": "",
-        "skuNo": ""
-    },
-    {
-        "image": "/assets/3.png",
-        "alt": "2-Tier Dish Drying Rack",
-        "name": "2-Tier Dish Drying Rack",
-        "desc": "Material: Aluminum\nSize: 440x250x28 mm\nColor: Frosted Grey",
-        "subDesc": "A 2-tier drying rack with ample capacity — separate levels for plates and bowls to combine drying and storage. The 2-in-1 design with a removable drip tray is ideal for households or gatherings that need extra space.", 
+        "alt": "Four-layer Storage Shelf",
+        "name": "Four-layer Storage Shelf",
+        "desc": "Four-layer Storage Shelf terbuat dari bahan carbon steel berkualitas tinggi yang dikenal kuat, tahan lama, tidak mudah berkarat, dan mampu menahan beban lebih baik dibanding bahan biasa. Dengan finishing yang rapi dan struktur yang kokoh, produk ini memberikan nilai tambah baik dari sisi estetika maupun keandalan.",
+        "subDesc": [
+            {
+                "title": "Dimensi",
+                "details": ""
+            },
+            {
+                "title": "Keunggulan Build Quality",
+                "details": ["Material carbon steel yang kuat dan solid memberikan stabilitas maksimal.", "Permukaan tahan karat dan tahan gores memastikan usia pakai yang panjang.", "Desain presisi sehingga tidak mudah bengkok, patah, atau berubah bentuk."]
+            },
+            {
+                "title": "Keunggulan Fungsi",
+                "details": ["Dirancang untuk memaksimalkan ruang penyimpanan di area rumah", "Memiliki desain modern yang mudah dipadukan dengan berbagai gaya interior.", "Pemasangan mudah tanpa perlu peralatan rumit.", "Menyimpan barang lebih rapi, mudah dijangkau, dan mengurangi clutter di rumah."]
+            }
+        ],
         "price": "",
         "skuNo": ""
     }

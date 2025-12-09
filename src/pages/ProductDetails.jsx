@@ -62,15 +62,26 @@ export default function ProductDetails() {
               <p className="font-medium mb-4">
                 No SKU: <span className="font-normal">{item.skuNo || `-`}</span>
               </p>
-              <div className="mb-4">
-                <p className="font-medium">Description</p>
+              <div className="mb-2">
+                <p className="font-medium">Description:</p>
                 <p className="font-normal" style={{ whiteSpace: "pre-wrap" }}>
                   {item.desc}
                 </p>
               </div>
-              <p className="font-medium" style={{ whiteSpace: "pre-wrap" }}>
-                {item.subDesc}
-              </p>
+              {item.subDesc?.map((subItem, subId) => (
+                <div key={subId} className="mb-2">
+                  {subItem.title ? <p className="">{subItem.title}:</p> : ""}
+                  {Array.isArray(subItem.details) ? (
+                    subItem.details.map((details, detailsId) => (
+                      <ul key={detailsId} className="list-disc">
+                        <li>{details}</li>
+                      </ul>
+                    ))
+                  ) : (
+                    <p>{subItem.details}</p>
+                  )}
+                </div>
+              ))}
             </div>
             <div className="">
               <p className="font-medium mb-6">
@@ -123,7 +134,9 @@ export default function ProductDetails() {
                 <Link to="#">
                   <div className="flex flex-row gap-2">
                     <FontAwesomeIcon icon={faWhatsapp} />
-                    <p className="text-sm font-medium">Click here to get special price!</p>
+                    <p className="text-sm font-medium">
+                      Click here to get special price!
+                    </p>
                   </div>
                 </Link>
                 {/* {item.marketplace.map((market, id) => (
