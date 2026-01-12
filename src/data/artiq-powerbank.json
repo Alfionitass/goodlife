@@ -1,0 +1,95 @@
+[
+    {
+        "image": [
+            "/assets/powerbank/oceanpack-haze-1.jpg",
+            "/assets/powerbank/oceanpack-haze-2.jpg",
+            "/assets/powerbank/oceanpack-stonemoss-1.jpg",
+            "/assets/powerbank/oceanpack-stonemoss-2.jpg"
+        ],
+        "alt": "Powerbank 5000 MAH Ocean Plastic Bottle Cap (Sustainable)",
+        "name": "Powerbank 5000 MAH Ocean Plastic Bottle Cap (Sustainable)",
+        "desc": "",
+        "subDesc": [
+            {
+                "title": "Varian",
+                "details": [
+                    "OceanPack Haze",
+                    "OceanPack Stone Moss"
+                ]
+            }
+        ],
+        "price": "330000",
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/powerbank/voltskin-moody-moon-1.jpg",
+            "/assets/powerbank/voltskin-moody-moon-2.jpg"
+        ],
+        "alt": "VoltSkin Moody Moon",
+        "name": "Powerbank 5000 MAH recycled PU 03 (Sustainable)",
+        "desc": "",
+        "subDesc": [
+            {
+                "title": "Varian",
+                "details": "VoltSkin Moody Moon"
+            }
+        ],
+        "price": "420000",
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/powerbank/voltskin-terra-brown-1.jpg",
+            "/assets/powerbank/voltskin-terra-brown-2.jpg",
+            "/assets/powerbank/voltskin-terra-brown-3.jpg"
+        ],
+        "alt": "VoltSkin Terra Brown",
+        "name": "Powerbank Magnetic 5000 MAH recycled PU 04 (Sustainable)",
+        "desc": "",
+        "subDesc": [
+            {
+                "title": "Varian",
+                "details": "VoltSkin Terra Brown"
+            }
+        ],
+        "price": "420000",
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/powerbank/magalum-moon-ash-1.jpg",
+            "/assets/powerbank/magalum-moon-ash-2.jpg",
+            "/assets/powerbank/magalum-moon-ash-3.jpg"
+        ],
+        "alt": "MagAlum Moon Ash",
+        "name": "Powerbank Magnetic 10000 MAH recycled Aluminium (Sustainable)",
+        "desc": "",
+        "subDesc": [
+            {
+                "title": "Varian",
+                "details": "MagAlum Moon Ash"
+            }
+        ],
+        "price": "650000",
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/powerbank/voltbridge-frosted-ash-1.jpg",
+            "/assets/powerbank/voltbridge-frosted-ash-2.jpg",
+            "/assets/powerbank/voltbridge-frosted-ash-3.jpg"
+        ],
+        "alt": "VoltBridge Frosted Ash",
+        "name": "Powerbank in built cable 10000 MAH Recycled PC ABS (Sustainable)",
+        "desc": "",
+        "subDesc": [
+            {
+                "title": "Varian",
+                "details": "VoltBridge Frosted Ash"
+            }
+        ],
+        "price": "472000",
+        "skuNo": ""
+    }
+]

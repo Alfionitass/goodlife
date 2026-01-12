@@ -12,26 +12,26 @@ export function Products({ products }) {
         <div className="md:flex gap-4 grid grid-cols-2 mb-4">
           {products.map((item, id) => (
             <CardContent key={id} className="gap-4 rounded-xl bg-white">
-              <CardHeader>
-                <img
-                  src={item.image}
-                  alt={item.alt}
-                  className="w-full h-full rounded-lg md:rounded-2xl"
-                />
-              </CardHeader>
-              <CardBody className="h-52">
-                <h4 className="mb-2 lg:mb-3 text-brand-primary-dark text-base md:text-lg lg:text-xl h-14 lg:h-12">
-                  {item.title}
-                </h4>
-                <h6 className="mb-3 text-sm lg:text-lg font-normal">
-                  {item.desc}
-                </h6>
-              </CardBody>
-              <CardFooter className="p-3 md:p-6">
-                <Link to={`${slugify(item.title)}`} state={item}>
+              <Link to={`${slugify(item.title)}`} state={item}>
+                <CardHeader>
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className="w-full h-full rounded-lg md:rounded-2xl"
+                  />
+                </CardHeader>
+                <CardBody className="h-52">
+                  <h4 className="mb-2 lg:mb-3 text-brand-primary-dark text-base md:text-lg lg:text-xl h-14 lg:h-12">
+                    {item.title}
+                  </h4>
+                  <h6 className="mb-3 text-sm lg:text-lg font-normal">
+                    {item.desc}
+                  </h6>
+                </CardBody>
+                <CardFooter className="p-3 md:p-6">
                   <button className="btn-red">Explore Collection</button>
-                </Link>
-              </CardFooter>
+                </CardFooter>
+              </Link>
             </CardContent>
           ))}
         </div>

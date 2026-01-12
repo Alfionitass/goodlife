@@ -1,6 +1,7 @@
 import { useNavigate, useParams, Link } from "react-router";
 import { products } from "../data/product";
 import { slugify } from "../utils/utils";
+import ImageSlider from "../components/ImageSlider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -34,81 +35,36 @@ export default function ProductDetails() {
     navigate(-1);
   };
 
+  // const subDescData = ({ subItem }) => {
+  //   if (subItem.title) {
+  //     if (Array.isArray(subItem.details)) {
+
+  //     }
+  //   }
+  // }
+
   if (!item) return <h5>Item not found</h5>;
 
   return (
-    <div className="px-4 py-4 md:m-10">
-      <div className="flex">
-        <div className="flex flex-row">
-          <button onClick={goBack}>
-            <p className="">{product.title}</p>
-          </button>
-          <p className="font-medium">{`/ ${item.name}`}</p>
-        </div>
+    <div className="px-6 sm:px-8 lg:px-12 py-4">
+      <div className="flex flex-row">
+        <button onClick={goBack}>
+          <p className="">{product.title}</p>
+        </button>
+        <p className="font-medium">{`/ ${item.name}`}</p>
       </div>
-      <div className="my-10">
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-8">
-          <div className="w-auto h-auto">
-            <img
-              className="object-cover w-full h-full"
-              src={item.image}
-              alt={item.alt}
-            />
-          </div>
-          <div className="flex flex-col justify-normal sm:justify-between text-left gap-8">
-            <div className="">
-              <h5 className="">{item.name}</h5>
-              <p className="mb-4">{item.subName}</p>
-              <p className="font-medium mb-4">
-                No SKU: <span className="font-normal">{item.skuNo || `-`}</span>
-              </p>
-              <div className="mb-2">
-                <p className="font-medium">Description:</p>
-                <p className="font-normal" style={{ whiteSpace: "pre-wrap" }}>
-                  {item.desc}
-                </p>
-              </div>
-              {item.subDesc?.map((subItem, subId) => (
-                <div key={subId} className="mb-2">
-                  {subItem.title ? <p className="">{subItem.title}:</p> : ""}
-                  {Array.isArray(subItem.details) ? (
-                    subItem.details.map((details, detailsId) => (
-                      <ul key={detailsId} className="list-disc">
-                        <li>{details}</li>
-                      </ul>
-                    ))
-                  ) : (
-                    <p>{subItem.details}</p>
-                  )}
-                </div>
-              ))}
+      <div className="max-w-5xl mx-auto my-10">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-[3fr_2fr] gap-8 min-h-[100svh] sm:h-[75vh] lg:h-[80vh]"> */}
+        <div className="grid grid-cols-1 sm:grid-cols-[3fr_2fr] gap-8">
+          <ImageSlider imageList={item.image} />
+          {/* <div className="text-left overflow-y-auto no-scrollbar"> */}
+          <div className="text-left">
+            <div className="text-xl sm:text-2xl lg:text-3xl font-bold">{item.name}</div>
+            <div className="mt-2 text-base sm:text-lg lg:text-xl font-bold">
+              Rp {item.price.toLocaleString("id-ID") || `-`}
             </div>
-            <div className="">
-              <p className="font-medium mb-6">
-                Price:{" "}
-                <span className="font-normal">
-                  Rp {item.price.toLocaleString("id-ID") || `-`}
-                </span>
-              </p>
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="flex flex-row gap-2">
-                  <FontAwesomeIcon icon={faHeadset} className="text-xl" />
-                  <p className="text-sm">Contact us at halo@good-life.id</p>
-                </div>
-                <div className="flex flex-row gap-2">
-                  <FontAwesomeIcon icon={faTruck} className="text-xl" />
-                  <p className="text-sm">Free shipping & delivery across</p>
-                </div>
-                <div className="flex flex-row gap-2">
-                  <FontAwesomeIcon icon={faCreditCard} className="text-xl" />
-                  <p className="text-sm">Trusted & secure payments</p>
-                </div>
-                <div className="flex flex-row gap-2">
-                  <FontAwesomeIcon icon={faMedal} className="text-xl" />
-                  <p className="text-sm">30-day return policy</p>
-                </div>
-              </div>
-              <p className="font-medium uppercase mb-2">Order Now</p>
+            <div className="mt-10">
+              <div className="uppercase text-base sm:text-lg lg:text-xl font-bold mb-2">Order Now</div>
               <div className="grid grid-cols-2 justify-center gap-4">
                 <Link to="#">
                   <div className="flex flex-row gap-2">
@@ -139,17 +95,54 @@ export default function ProductDetails() {
                     </p>
                   </div>
                 </Link>
-                {/* {item.marketplace.map((market, id) => (
-                  <Link key={id} to={market.link}>
-                    <FontAwesomeIcon icon={getIcon(market.icon)} className="text-2xl" />
-                  </Link>
-                ))} */}
               </div>
             </div>
-
-            {/* shop from platform, button change to Click Here */}
-            {/* whatsapp icon, desc: order by whatsapp for special price, button Click Here */}
+            <div className="grid grid-cols-2 gap-4 mt-10">
+              <div className="flex flex-row gap-2">
+                <FontAwesomeIcon icon={faHeadset} className="text-xl" />
+                <p className="text-sm">Contact us at halo@good-life.id</p>
+              </div>
+              <div className="flex flex-row gap-2">
+                <FontAwesomeIcon icon={faTruck} className="text-xl" />
+                <p className="text-sm">Free shipping & delivery across</p>
+              </div>
+              <div className="flex flex-row gap-2">
+                <FontAwesomeIcon icon={faCreditCard} className="text-xl" />
+                <p className="text-sm">Trusted & secure payments</p>
+              </div>
+              <div className="flex flex-row gap-2">
+                <FontAwesomeIcon icon={faMedal} className="text-xl" />
+                <p className="text-sm">30-day return policy</p>
+              </div>
+            </div>
           </div>
+        </div>
+        <hr className="my-12 lg:my-20 border-black/20 border-t-1" />
+        <div className="max-w-2xl flex flex-col gap-2 text-left">
+          <div className="text-lg sm:text-xl lg:text-2xl font-bold mb-4">Spesifikasi Produk</div>
+          <p className="font-normal">{item.desc || `-`}</p>
+          <p className="font-medium">
+            No SKU: <span className="font-normal">{item.skuNo || `-`}</span>
+          </p>
+          {item.subDesc?.map((subItem, subId) => (
+            <div key={subId}>
+              {subItem.title && !Array.isArray(subItem.details) ? (
+                <p className="font-medium">
+                  {subItem.title}:{" "}
+                  <span className="font-normal">{subItem.details}</span>
+                </p>
+              ) : (
+                <>
+                  <p className="font-medium">{subItem.title}:</p>
+                  <ul className="list-disc">
+                    {subItem.details.map((details, detailsId) => (
+                      <li key={detailsId}>{details}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
