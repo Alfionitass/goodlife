@@ -1,6 +1,6 @@
 import { Banner } from "../components/Banner";
 import { Products } from "../components/Products";
-import ImageSlider from "../components/ImageSlider";
+import BusinessGoals from "../components/BusinessGoals";
 import { CardWithImage } from "../components/CardWithImage";
 import { Shop } from "../components/Shop";
 import { Newsletter } from "../components/Newsletter";
@@ -11,9 +11,9 @@ import { products } from "../data/product";
 export default function HomePage() {
   return (
     <>
-      <Banner banner={data.banner} />
+      <Banner banner={data.banner} products={products} />
       <Products products={products} />
-      <ImageSlider slides={data.slides} />
+      <BusinessGoals slides={data.slides} />
       <CardWithImage data={data.servicesBanner} />
       <Shop onlineStore={data.onlineStore} />
       <Newsletter banner={data.newsBanner} />

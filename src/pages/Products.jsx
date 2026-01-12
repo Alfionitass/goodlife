@@ -2,6 +2,7 @@ import { Link, Outlet, useParams } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import { slugify } from "../utils/utils";
@@ -90,116 +91,130 @@ export default function Products() {
     }
   }, [currentPage, totalPages]);
 
-  const getPaginationNumbers = () => {
-    const pages = [];
+  // comment all pagination logic
+  // const getPaginationNumbers = () => {
+  //   const pages = [];
 
-    if (totalPages <= 5) {
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
-      return pages;
-    }
+  //   if (totalPages <= 5) {
+  //     for (let i = 1; i <= totalPages; i++) {
+  //       pages.push(i);
+  //     }
+  //     return pages;
+  //   }
 
-    const left = Math.max(2, currentPage - 1);
-    const right = Math.min(totalPages - 1, currentPage + 1);
+  //   const left = Math.max(2, currentPage - 1);
+  //   const right = Math.min(totalPages - 1, currentPage + 1);
 
-    pages.push(1);
+  //   pages.push(1);
 
-    if (left > 2) {
-      pages.push("dots-left");
-    }
+  //   if (left > 2) {
+  //     pages.push("dots-left");
+  //   }
 
-    for (let i = left; i <= right; i++) {
-      pages.push(i);
-    }
+  //   for (let i = left; i <= right; i++) {
+  //     pages.push(i);
+  //   }
 
-    if (right < totalPages - 1) {
-      pages.push("dots-right");
-    }
+  //   if (right < totalPages - 1) {
+  //     pages.push("dots-right");
+  //   }
 
-    pages.push(totalPages);
+  //   pages.push(totalPages);
 
-    return pages;
-  };
+  //   return pages;
+  // };
 
-  const goToPage = (page) => {
-    if (page < 1 || page > totalPages) return;
-    setCurrentPage(page);
-  };
+  // const goToPage = (page) => {
+  //   if (page < 1 || page > totalPages) return;
+  //   setCurrentPage(page);
+  // };
 
-  const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentItems = displayList.slice(startIdx, startIdx + ITEMS_PER_PAGE);
+  // const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+  // const currentItems = displayList.slice(startIdx, startIdx + ITEMS_PER_PAGE);
 
   if (Array.isArray(product.collection) && product.collection.length === 0) {
-    return <h5>Product not found for category: {category}</h5>;
+    return (
+      <div className="flex flex-col justify-between gap-24 px-6 sm:px-8 lg:px-12 py-4 md:my-10">
+        <h4>Product Coming Soon...</h4>
+        <Link to="/">
+          <div className="flex items-center">
+            <FontAwesomeIcon icon={faChevronLeft} />
+            <p className="font-medium">Back to Home</p>
+          </div>
+        </Link>
+      </div>
+    );
   }
 
   return (
     <div>
-      {!isDetailPage && Array.isArray(product.collection) && product.collection.length > 0 && (
-        <div className="p-4 md:my-10">
-          <div className="flex">
-            <div className="flex flex-row">
-              <Link to="/">
-                <p className="">Home</p>
-              </Link>
-              <p className="font-medium">/ {product.title}</p>
+      {!isDetailPage &&
+        Array.isArray(product.collection) &&
+        product.collection.length > 0 && (
+          <div className="px-6 sm:px-8 lg:px-12 py-4 md:my-10">
+            <div className="flex">
+              <div className="flex flex-row">
+                <Link to="/">
+                  <p className="">Home</p>
+                </Link>
+                <p className="font-medium">/ {product.title}</p>
+              </div>
             </div>
-          </div>
-          <div className="my-10">
-            <h4 className="text-2xl md:text-3xl">{product.title}</h4>
-            <div className="flex flex-col">
-              <div className="flex flex-col sm:flex-row justify-between my-10 gap-4">
-                <select
-                  className="w-full sm:w-max px-4 py-4 border-2 border-gray-200 rounded focus:ring-4 focus:ring-brand-primary-dark/20 focus:border-brand-primary-dark transition-all duration-200 bg-white/50 backdrop-blur-sm hover:border-brand-primary-dark outline-none"
-                  value={selectValue}
-                  onChange={(e) => handleSelectChange(e.target.value)}
-                >
-                  <option hidden>Filter by</option>
-                  <option value="lowToHigh">Price, lowest to highest</option>
-                  <option value="highToLow">Price, highest to lowest</option>
-                </select>
-                <div className="w-full sm:w-max flex items-center justify-between px-4 py-2 border-2 border-gray-200 rounded focus:ring-4 focus:ring-brand-primary-dark/20 focus:border-brand-primary-dark transition-all duration-200 bg-white/50 backdrop-blur-sm hover:border-brand-primary-dark">
-                  <input
-                    type="text"
-                    placeholder="...Search Products"
-                    className="outline-none placeholder-black"
-                    value={searchValue}
-                    onChange={(e) => setSearchValue(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                  />
-                  <button
-                    className="py-2 px-6 bg-brand-primary-dark text-white rounded"
-                    onClick={handleSearch}
+            <div className="max-w-5xl mx-auto my-10">
+              <h4 className="text-2xl md:text-3xl">{product.title}</h4>
+              <div className="flex flex-col">
+                <div className="flex flex-col sm:flex-row justify-between my-10 gap-4">
+                  <select
+                    className="w-full sm:w-max px-4 py-4 border-2 border-gray-200 rounded focus:ring-4 focus:ring-brand-primary-dark/20 focus:border-brand-primary-dark transition-all duration-200 bg-white/50 backdrop-blur-sm hover:border-brand-primary-dark outline-none"
+                    value={selectValue}
+                    onChange={(e) => handleSelectChange(e.target.value)}
                   >
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                  </button>
+                    <option hidden>Filter by</option>
+                    <option value="lowToHigh">Price, lowest to highest</option>
+                    <option value="highToLow">Price, highest to lowest</option>
+                  </select>
+                  <div className="w-full sm:w-max flex items-center justify-between px-4 py-2 border-2 border-gray-200 rounded focus:ring-4 focus:ring-brand-primary-dark/20 focus:border-brand-primary-dark transition-all duration-200 bg-white/50 backdrop-blur-sm hover:border-brand-primary-dark">
+                    <input
+                      type="text"
+                      placeholder="...Search Products"
+                      className="outline-none placeholder-black"
+                      value={searchValue}
+                      onChange={(e) => setSearchValue(e.target.value)}
+                      onKeyDown={handleKeyDown}
+                    />
+                    <button
+                      className="py-2 px-6 bg-brand-primary-dark text-white rounded"
+                      onClick={handleSearch}
+                    >
+                      <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {currentItems?.map((item, id) => (
-                  <CardContent key={id} className="bg-white">
-                    <Link to={slugify(item.name)}>
-                      <CardHeader className="!mx-0 w-auto h-40 sm:h-48 desktop-mid:h-56 xl:h-80">
-                        <img
-                          className="object-cover w-full h-full"
-                          src={`/${item.image.replace(/^\/?/, "")}`}
-                          alt={item.alt}
-                        />
-                      </CardHeader>
-                      <CardBody>
-                        <p>{item.name}</p>
-                        <p>Rp {item.price.toLocaleString("id-ID") || `-`}</p>
-                      </CardBody>
-                    </Link>
-                  </CardContent>
-                ))}
-              </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {displayList?.map((collection, collectionId) => (
+                    <CardContent key={collectionId} className="bg-white">
+                      <Link to={slugify(collection.name)}>
+                        <CardHeader className="!mx-0 w-auto h-36 sm:h-44 desktop-mid:h-52 xl:h-64">
+                          <img
+                            className="object-cover w-full h-full"
+                            src={`/${collection.image[0].replace(/^\/?/, "")}`}
+                            alt={collection.alt}
+                          />
+                        </CardHeader>
+                        <CardBody>
+                          <p>{collection.name}</p>
+                          <p>
+                            Rp {collection.price.toLocaleString("id-ID") || `-`}
+                          </p>
+                        </CardBody>
+                      </Link>
+                    </CardContent>
+                  ))}
+                </div>
 
-              {/* Pagination */}
-              {displayList.length > 0 && (
+                {/* Pagination */}
+                {/* {displayList.length > 0 && (
                 <div className="flex items-center justify-center gap-2 mt-12">
-                  {/* prev */}
                   <button
                     onClick={() => goToPage(currentPage - 1)}
                     disabled={currentPage === 1}
@@ -212,7 +227,6 @@ export default function Products() {
                     Prev
                   </button>
 
-                  {/* page numbers + dots */}
                   {getPaginationNumbers().map((item, idx) => {
                     if (item === "dots-left" || item === "dots-right") {
                       return (
@@ -237,7 +251,6 @@ export default function Products() {
                     );
                   })}
 
-                  {/* next */}
                   <button
                     onClick={() => goToPage(currentPage + 1)}
                     disabled={currentPage === totalPages}
@@ -250,11 +263,11 @@ export default function Products() {
                     Next
                   </button>
                 </div>
-              )}
+              )} */}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
       {/* Nested route placeholder */}
       <Outlet />

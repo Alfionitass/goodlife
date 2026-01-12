@@ -1,61 +1,155 @@
-import { useState, useEffect } from "react";
-import { AutoAnimate } from "./AutoAnimate";
-import { Typography, Slider } from "@material-tailwind/react";
-// eslint-disable-next-line no-unused-vars
-import { AnimatePresence, motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
-export default function ImageSlider({ slides }) {
-  const [activeIndex, setActiveIndex] = useState(0);
+export default function ImageSlider({ imageList }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isZoomOpen, setIsZoomOpen] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 30000); // Change item every 3 seconds
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? imageList.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [slides]);
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === imageList.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
-  const handleClick = (e, id) => {
-    e.preventDefault();
-    setActiveIndex(id);
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
+  // swipe mobile
+  const minSwipeDistance = 50;
+
+  const handleTouchStart = (e) => {
+    setTouchEndX(null);
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+
+    const distance = touchStartX - touchEndX;
+
+    if (distance > minSwipeDistance) {
+      nextSlide(); // swipe left
+    }
+
+    if (distance < -minSwipeDistance) {
+      prevSlide(); // swipe right
+    }
   };
 
   return (
-    <div className="w-full slider h-auto md:h-[400px] flex flex-col md:flex-row gap-6 my-8">
-      <AutoAnimate key={activeIndex} classname="w-full md:w-1/2">
-        <img src={slides[activeIndex].image} alt="" className="h-full w-full" />
-      </AutoAnimate>
-      <div className="flex-col w-full md:w-1/2 md:pr-6">
-        <h6 className="mb-4 font-black">GOODLIFE</h6>
-        <div className="flex flex-row justify-center gap-x-10 my-4">
-          {slides.map((item, id) => (
-            <div
-              className={`border-b-2 mb-4 ${
-                activeIndex === id ? "border-black" : "border-gray-200"
-              }`}
-              key={id}
-            >
-              <p
-                className={`cursor-pointer font-bold ${
-                  activeIndex === id ? "text-black" : "text-gray-400"
-                }`}
-                onClick={(e) => handleClick(e, id)}
-              >
-                {item.keyTitle}
-              </p>
-            </div>
-          ))}
-        </div>
-        <AutoAnimate
-          key={activeIndex}
-          classname="flex flex-col gap-4 overflow-hidden px-8 md:px-4"
+    <div className="max-w-[1400px] w-full m-auto">
+      <div
+        onClick={() => setIsZoomOpen(true)}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        className="aspect-square sm:aspect-[4/3] sm:px-16 lg:px-20 relative group touch-pan-y"
+      >
+        <div
+          style={{ backgroundImage: `url(${imageList[currentIndex]})` }}
+          className={`w-full h-full bg-center bg-cover duration-500`}
+        />
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+            prevSlide();
+          }}
+          className="hidden sm:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 lg:text-2xl rounded-full p-1 lg:p-2 bg-black/30 text-white cursor-pointer"
         >
-          <h4 className="mb-4 text-xl md:text-3xl font-black">
-            {slides[activeIndex].title}
-          </h4>
-          <p className="mb-4">{slides[activeIndex].desc}</p>
-        </AutoAnimate>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </div>
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+            nextSlide();
+          }}
+          className="hidden sm:group-hover:block absolute hover:block top-[50%] -translate-x-0 translate-y-[-50%] right-5 lg:text-2xl rounded-full p-1 lg:p-2 bg-black/30 text-white cursor-pointer"
+        >
+          <FontAwesomeIcon icon={faChevronRight} />
+        </div>
       </div>
+      {/* dot dot slide image */}
+      {/* <div className="flex top-4 justify-center py-2">
+        {slides.map((slide, slideIndex) => (
+          <div
+            key={slideIndex}
+            onClick={(e) => {
+              e.stopPropagation();
+              goToSlide(slideIndex);
+            }}
+            className="mx-1 text-xs text-gray cursor-pointer"
+          >
+            <FontAwesomeIcon icon={faCircle} />
+          </div>
+        ))}
+      </div> */}
+
+      {/* Thumbnail Image */}
+      <div className="mt-4 flex justify-center gap-3">
+        {imageList.map((slide, slideIndex) => (
+          <div
+            key={slideIndex}
+            onMouseEnter={() => setCurrentIndex(slideIndex)}
+            onClick={() => goToSlide(slideIndex)}
+            className={`w-16 h-16 lg:w-24 lg:h-24 cursor-pointer overflow-hidden border-2 transition
+              ${
+                currentIndex === slideIndex
+                  ? "border-black opacity-100"
+                  : "border-transparent opacity-60 hover:opacity-100"
+              }
+            `}
+          >
+            <div
+              style={{ backgroundImage: `url(${slide})` }}
+              className="w-full h-full bg-cover bg-center"
+            />
+          </div>
+        ))}
+      </div>
+      {/* Zoom Image */}
+      {isZoomOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
+          onClick={() => setIsZoomOpen(false)}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative bg-white p-4 max-w-3xl w-[90%]"
+          >
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsZoomOpen(false);
+              }}
+              className="absolute -top-0 -right-0 bg-black text-white w-8 h-8 flex items-center justify-center"
+            >
+              <FontAwesomeIcon icon={faXmark} />
+            </button>
+            <div
+              className="w-full aspect-[4/3] bg-contain bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${imageList[currentIndex]})` }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
