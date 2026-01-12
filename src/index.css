@@ -30,7 +30,7 @@
     @apply text-xl font-semibold antialiased;
   }
 
-  p {
+  p, ul li {
     @apply text-base font-normal antialiased;
   }
 

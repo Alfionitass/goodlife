@@ -7,6 +7,13 @@ export default withMT({
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        // material tailwind
+        // sm: "540px",
+        // md: "720px",
+        // lg: "960px",
+        "desktop-mid": { min: "960px", max: "1205px" },
+      },
       fontFamily: {
         // custom: ["Gotham", "Arial", "sans-serif"], // 'custom' is your utility class name
         sans: ['"Gotham"', ...defaultTheme.fontFamily.sans],
