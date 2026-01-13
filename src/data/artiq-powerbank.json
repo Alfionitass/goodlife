@@ -8,7 +8,7 @@
         ],
         "alt": "Powerbank 5000 MAH Ocean Plastic Bottle Cap (Sustainable)",
         "name": "Powerbank 5000 MAH Ocean Plastic Bottle Cap (Sustainable)",
-        "desc": "",
+        "desc": "Powerbank OceanPack",
         "subDesc": [
             {
                 "title": "Varian",
@@ -18,7 +18,7 @@
                 ]
             }
         ],
-        "price": "330000",
+        "price": 330000,
         "skuNo": ""
     },
     {
@@ -28,14 +28,9 @@
         ],
         "alt": "VoltSkin Moody Moon",
         "name": "Powerbank 5000 MAH recycled PU 03 (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "VoltSkin Moody Moon"
-            }
-        ],
-        "price": "420000",
+        "desc": "VoltSkin Moody Moon",
+        "subDesc": [],
+        "price": 420000,
         "skuNo": ""
     },
     {
@@ -46,14 +41,9 @@
         ],
         "alt": "VoltSkin Terra Brown",
         "name": "Powerbank Magnetic 5000 MAH recycled PU 04 (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "VoltSkin Terra Brown"
-            }
-        ],
-        "price": "420000",
+        "desc": "VoltSkin Terra Brown",
+        "subDesc": [],
+        "price": 420000,
         "skuNo": ""
     },
     {
@@ -64,14 +54,9 @@
         ],
         "alt": "MagAlum Moon Ash",
         "name": "Powerbank Magnetic 10000 MAH recycled Aluminium (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "MagAlum Moon Ash"
-            }
-        ],
-        "price": "650000",
+        "desc": "MagAlum Moon Ash",
+        "subDesc": [],
+        "price": 650000,
         "skuNo": ""
     },
     {
@@ -82,14 +67,9 @@
         ],
         "alt": "VoltBridge Frosted Ash",
         "name": "Powerbank in built cable 10000 MAH Recycled PC ABS (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "VoltBridge Frosted Ash"
-            }
-        ],
-        "price": "472000",
+        "desc": "VoltBridge Frosted Ash",
+        "subDesc": [],
+        "price": 472000,
         "skuNo": ""
     }
 ]
