@@ -7,14 +7,9 @@
         ],
         "alt": "TWS Bamboo Tunes Eggshell Shock",
         "name": "Recycled ABS and Bamboo TWS round (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Bamboo Tunes Eggshell Shock"
-            }
-        ],
-        "price": "305000",
+        "desc": "Bamboo Tunes Eggshell Shock",
+        "subDesc": [],
+        "price": 305000,
         "skuNo": ""
     },
     {
@@ -25,14 +20,9 @@
         ],
         "alt": "TWS Bamboo Synq Eggshell Shock",
         "name": "Recycled ABS and Bamboo TWS (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Bamboo Synq Eggshell Shock"
-            }
-        ],
-        "price": "305000",
+        "desc": "Bamboo Synq Eggshell Shock",
+        "subDesc": [],
+        "price": 305000,
         "skuNo": ""
     },
     {
@@ -43,14 +33,9 @@
         ],
         "alt": "TWS HushBuds Glacier White",
         "name": "Recycled ABS ANC TWS (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "HushBuds Glacier White"
-            }
-        ],
-        "price": "464000",
+        "desc": "HushBuds Glacier White",
+        "subDesc": [],
+        "price": 464000,
         "skuNo": ""
     },
     {
@@ -60,14 +45,9 @@
         ],
         "alt": "Charger Magmount Nimbus Grey",
         "name": "Recycled PC ABS Wireless car charger (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Magmount Nimbus Grey"
-            }
-        ],
-        "price": "410000",
+        "desc": "Magmount Nimbus Grey",
+        "subDesc": [],
+        "price": 410000,
         "skuNo": ""
     },
     {
@@ -79,17 +59,17 @@
         ],
         "alt": "Charger Arcdoc Charger",
         "name": "3 in 1 wireless charger - Recycled Aluminuium (Sustainable)",
-        "desc": "",
+        "desc": "Arcdoc Charger",
         "subDesc": [
             {
                 "title": "Varian",
                 "details": [
-                    "Arcdoc Lunar White",
-                    "Arcdoc Shadow Black"
+                    "Lunar White",
+                    "Shadow Black"
                 ]
             }
         ],
-        "price": "566756",
+        "price": 566756,
         "skuNo": ""
     },
     {
@@ -100,14 +80,9 @@
         ],
         "alt": "Adapter Trivolt Midnight Black 33 Watt",
         "name": "Multi plug power adapter 33 watt GAN dual port (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Trivolt Midnight Black"
-            }
-        ],
-        "price": "385000",
+        "desc": "Trivolt Midnight Black",
+        "subDesc": [],
+        "price": 385000,
         "skuNo": ""
     },
     {
@@ -118,14 +93,9 @@
         ],
         "alt": "Adapter Trivolt Echo White triple port 65 watt",
         "name": "Multi plug power adapter 65 watt GAN triple port (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Trivolt Echo White"
-            }
-        ],
-        "price": "614000",
+        "desc": "Trivolt Echo White",
+        "subDesc": [],
+        "price": 614000,
         "skuNo": ""
     },
     {
@@ -136,14 +106,9 @@
         ],
         "alt": "Adapter Trivolt Slim dual port 65 watt",
         "name": "Multi plug slim power adapter 65 watt GAN dual port (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Trivolt Slim Echo White"
-            }
-        ],
-        "price": "711000",
+        "desc": "Trivolt Slim Echo White",
+        "subDesc": [],
+        "price": 711000,
         "skuNo": ""
     },
     {
@@ -154,14 +119,9 @@
         ],
         "alt": "Adapter Globe Key Harvest White",
         "name": "Travel Adapter 45 watt 4 port recycled ABS (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Globe Key Harvest White"
-            }
-        ],
-        "price": "466000",
+        "desc": "Globe Key Harvest White",
+        "subDesc": [],
+        "price": 466000,
         "skuNo": ""
     },
     {
@@ -172,14 +132,9 @@
         ],
         "alt": "Cable A to C Sagestorm",
         "name": "Braided cable USB-A to C 1.5m (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Cable A-C Sagestorm"
-            }
-        ],
-        "price": "116000",
+        "desc": "Cable A-C Sagestorm",
+        "subDesc": [],
+        "price": 116000,
         "skuNo": ""
     },
     {
@@ -190,14 +145,9 @@
         ],
         "alt": "Cable C to C Sagestorm",
         "name": "Braided cable USB-C to C 1.5m 60w (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Cable C-C Sagestorm"
-            }
-        ],
-        "price": "116000",
+        "desc": "Cable C-C Sagestorm",
+        "subDesc": [],
+        "price": 116000,
         "skuNo": ""
     },
     {
@@ -208,14 +158,9 @@
         ],
         "alt": "Cable C to C Sagestorm",
         "name": "Braided cable USB-C to C 2m 100w (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Cable C-C Sagestorm"
-            }
-        ],
-        "price": "127800",
+        "desc": "Cable C-C Sagestorm",
+        "subDesc": [],
+        "price": 127800,
         "skuNo": ""
     },
     {
@@ -226,14 +171,9 @@
         ],
         "alt": "Cable C to L Sagestorm",
         "name": "Braided cable USB-C to L 1.5m 27w (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Cable C-L Sagestorm"
-            }
-        ],
-        "price": "116000",
+        "desc": "Cable C-L Sagestorm",
+        "subDesc": [],
+        "price": 116000,
         "skuNo": ""
     },
     {
@@ -244,14 +184,9 @@
         ],
         "alt": "Cable Multi Head Omnicable Sagestorm",
         "name": "Multi head cable c to multi port (Sustainable)",
-        "desc": "",
-        "subDesc": [
-            {
-                "title": "Varian",
-                "details": "Multi Head Omnicable Sagestorm"
-            }
-        ],
-        "price": "147500",
+        "desc": "Multi Head Omnicable Sagestorm",
+        "subDesc": [],
+        "price": 147500,
         "skuNo": ""
     }
 ]
