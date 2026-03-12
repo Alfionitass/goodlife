@@ -29,12 +29,12 @@
         {
             "title": "Smart Storage",
             "image": "/assets/banner-1.png",
-            "imgAlt": "Banner 1"
+            "alt": "smart-storage"
         },
         {
             "title": "One Stop for All Things Home",
-            "image": "assets/banner-2.png",
-            "imgAlt": "Banner 2"
+            "image": "/assets/banner-2.png",
+            "alt": "things-banner"
         }
     ],
     "slides": [

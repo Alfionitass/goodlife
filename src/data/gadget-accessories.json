@@ -1,0 +1,192 @@
+[
+    {
+        "image": [
+            "/assets/gadget-accessories/tws-eggshell-tunes-1.jpg",
+            "/assets/gadget-accessories/tws-eggshell-tunes-2.jpg",
+            "/assets/gadget-accessories/tws-eggshell-tunes-3.jpg"
+        ],
+        "alt": "TWS Bamboo Tunes Eggshell Shock",
+        "name": "Recycled ABS and Bamboo TWS round (Sustainable)",
+        "desc": "Bamboo Tunes Eggshell Shock",
+        "subDesc": [],
+        "price": 305000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/tws-eggshell-synq-1.jpg",
+            "/assets/gadget-accessories/tws-eggshell-synq-2.jpg",
+            "/assets/gadget-accessories/tws-eggshell-synq-3.jpg"
+        ],
+        "alt": "TWS Bamboo Synq Eggshell Shock",
+        "name": "Recycled ABS and Bamboo TWS (Sustainable)",
+        "desc": "Bamboo Synq Eggshell Shock",
+        "subDesc": [],
+        "price": 305000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/tws-hushbuds-1.jpg",
+            "/assets/gadget-accessories/tws-hushbuds-2.jpg",
+            "/assets/gadget-accessories/tws-hushbuds-3.jpg"
+        ],
+        "alt": "TWS HushBuds Glacier White",
+        "name": "Recycled ABS ANC TWS (Sustainable)",
+        "desc": "HushBuds Glacier White",
+        "subDesc": [],
+        "price": 464000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/charger-magmount-nimbus-grey-1.jpg",
+            "/assets/gadget-accessories/charger-magmount-nimbus-grey-2.jpg"
+        ],
+        "alt": "Charger Magmount Nimbus Grey",
+        "name": "Recycled PC ABS Wireless car charger (Sustainable)",
+        "desc": "Magmount Nimbus Grey",
+        "subDesc": [],
+        "price": 410000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/charger-arcdoc-lunar-white-1.jpg",
+            "/assets/gadget-accessories/charger-arcdoc-lunar-white-2.jpg",
+            "/assets/gadget-accessories/charger-arcdoc-shadow-black-1.jpg",
+            "/assets/gadget-accessories/charger-arcdoc-shadow-black-2.jpg"
+        ],
+        "alt": "Charger Arcdoc Charger",
+        "name": "3 in 1 wireless charger - Recycled Aluminuium (Sustainable)",
+        "desc": "Arcdoc Charger",
+        "subDesc": [
+            {
+                "title": "Varian",
+                "details": [
+                    "Lunar White",
+                    "Shadow Black"
+                ]
+            }
+        ],
+        "price": 566756,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/adapter-trivolt-midnight-black-33w-1.jpg",
+            "/assets/gadget-accessories/adapter-trivolt-midnight-black-33w-2.jpg",
+            "/assets/gadget-accessories/adapter-trivolt-midnight-black-33w-3.jpg"
+        ],
+        "alt": "Adapter Trivolt Midnight Black 33 Watt",
+        "name": "Multi plug power adapter 33 watt GAN dual port (Sustainable)",
+        "desc": "Trivolt Midnight Black",
+        "subDesc": [],
+        "price": 385000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/adapter-trivolt-echo-white-triple-port-65w-1.jpg",
+            "/assets/gadget-accessories/adapter-trivolt-echo-white-triple-port-65w-2.jpg",
+            "/assets/gadget-accessories/adapter-trivolt-echo-white-triple-port-65w-3.jpg"
+        ],
+        "alt": "Adapter Trivolt Echo White triple port 65 watt",
+        "name": "Multi plug power adapter 65 watt GAN triple port (Sustainable)",
+        "desc": "Trivolt Echo White",
+        "subDesc": [],
+        "price": 614000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/adapter-trivolt-slim-dual-port-65w-1.jpg",
+            "/assets/gadget-accessories/adapter-trivolt-slim-dual-port-65w-2.jpg",
+            "/assets/gadget-accessories/adapter-trivolt-slim-dual-port-65w-3.jpg"
+        ],
+        "alt": "Adapter Trivolt Slim dual port 65 watt",
+        "name": "Multi plug slim power adapter 65 watt GAN dual port (Sustainable)",
+        "desc": "Trivolt Slim Echo White",
+        "subDesc": [],
+        "price": 711000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/adapter-globe-key-harvest-white-1.jpg",
+            "/assets/gadget-accessories/adapter-globe-key-harvest-white-2.jpg",
+            "/assets/gadget-accessories/adapter-globe-key-harvest-white-3.jpg"
+        ],
+        "alt": "Adapter Globe Key Harvest White",
+        "name": "Travel Adapter 45 watt 4 port recycled ABS (Sustainable)",
+        "desc": "Globe Key Harvest White",
+        "subDesc": [],
+        "price": 466000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/cable-a-to-c-sagestorm-1.jpg",
+            "/assets/gadget-accessories/cable-a-to-c-sagestorm-2.jpg",
+            "/assets/gadget-accessories/cable-a-to-c-sagestorm-3.jpg"
+        ],
+        "alt": "Cable A to C Sagestorm",
+        "name": "Braided cable USB-A to C 1.5m (Sustainable)",
+        "desc": "Cable A-C Sagestorm",
+        "subDesc": [],
+        "price": 116000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/cable-c-to-c-sagestorm-1.jpg",
+            "/assets/gadget-accessories/cable-c-to-c-sagestorm-2.jpg",
+            "/assets/gadget-accessories/cable-c-to-c-sagestorm-3.jpg"
+        ],
+        "alt": "Cable C to C Sagestorm",
+        "name": "Braided cable USB-C to C 1.5m 60w (Sustainable)",
+        "desc": "Cable C-C Sagestorm",
+        "subDesc": [],
+        "price": 116000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/cable-c-to-c-sagestorm-1.jpg",
+            "/assets/gadget-accessories/cable-c-to-c-sagestorm-2.jpg",
+            "/assets/gadget-accessories/cable-c-to-c-sagestorm-3.jpg"
+        ],
+        "alt": "Cable C to C Sagestorm",
+        "name": "Braided cable USB-C to C 2m 100w (Sustainable)",
+        "desc": "Cable C-C Sagestorm",
+        "subDesc": [],
+        "price": 127800,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/cable-c-to-l-sagestorm-1.jpg",
+            "/assets/gadget-accessories/cable-c-to-l-sagestorm-2.jpg",
+            "/assets/gadget-accessories/cable-c-to-l-sagestorm-3.jpg"
+        ],
+        "alt": "Cable C to L Sagestorm",
+        "name": "Braided cable USB-C to L 1.5m 27w (Sustainable)",
+        "desc": "Cable C-L Sagestorm",
+        "subDesc": [],
+        "price": 116000,
+        "skuNo": ""
+    },
+    {
+        "image": [
+            "/assets/gadget-accessories/cable-omni-multicable-1.jpg",
+            "/assets/gadget-accessories/cable-omni-multicable-2.jpg",
+            "/assets/gadget-accessories/cable-omni-multicable-3.jpg"
+        ],
+        "alt": "Cable Multi Head Omnicable Sagestorm",
+        "name": "Multi head cable c to multi port (Sustainable)",
+        "desc": "Multi Head Omnicable Sagestorm",
+        "subDesc": [],
+        "price": 147500,
+        "skuNo": ""
+    }
+]
