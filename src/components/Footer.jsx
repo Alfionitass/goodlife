@@ -1,71 +1,144 @@
-import { Link, NavLink } from "react-router";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, NavLink } from 'react-router';
+import data from '../data/data.json';
 import {
-  faFacebook,
-  faInstagram,
-  faTiktok,
-} from "@fortawesome/free-brands-svg-icons";
+  Button,
+  Box,
+  ListItemButton,
+  ListItemText,
+  List,
+  AppBar,
+  Toolbar,
+  IconButton,
+  Container,
+  Grid,
+  Typography,
+} from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
-export function Footer({ menu, logo }) {
+export function Footer() {
+  const newMenu = data.menu.filter((item) => item.menu !== 'Contact');
+
   return (
-    <div className="footer flex flex-col items-center bg-brand-secondary-dark text-white px-8 py-8 mt-8">
-      <div className="flex flex-col md:flex-row justify-between gap-4 mb-8 md:text-left">
-        <div className="brand flex flex-col items-center md:items-start md:w-1/4">
-          <Link to="/">
-            <img src={logo} alt="Goodlife Logo" width="150" height="50" />
-          </Link>
-          <p className="text-sm">
-            GOODLIFE is more than a brand. It’s a daily ritual for those who
-            crave purposeful living, thoughtful design, and feel-good products
-            that actually make life better.
-          </p>
-        </div>
-        <div className="navigation flex flex-col">
-          <p className="text-sm font-black uppercase pt-4 mb-4">Navigation</p>
-          {menu?.map((item, index) => (
-            <p className="text-sm mb-2" key={index}>
-              <NavLink to={item.path}>{item.menu}</NavLink>
-            </p>
-          ))}
-        </div>
-        <div className="cs-care flex flex-col">
-          <p className="text-sm font-black uppercase pt-4 mb-4">
-            Customer Care
-          </p>
-          <p className="text-sm mb-2">
-            <a href="#">FAQ</a>
-          </p>
-          <p className="text-sm mb-2">
-            <a href="#">Shipping Info</a>
-          </p>
-          <p className="text-sm">
-            <a href="#">Return Policy</a>
-          </p>
-        </div>
-        <div className="social-media flex flex-col items-center md:items-start">
-          <p className="text-sm font-black uppercase pt-4 mb-4">Find Us</p>
-          <div className="flex gap-2">
-            <a
-              href="https://www.facebook.com/ourgoodlife.id"
-              target="_blank"
-              rel="noopener noreferrer"
+    <Box sx={{ backgroundColor: 'secondary.main', color: 'white', p: { xs: 4, md: 2 } }}>
+      <Grid container spacing={3}>
+        <Grid size={{ xs: 12, md: 3 }} mb={4}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: 'white',
+              fontSize: { xs: '2.25rem', md: '3rem' },
+              width: '100%',
+            }}
+          >
+            Stay
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{
+              color: 'white',
+              fontSize: { xs: '1.5rem', md: '2rem' },
+              width: '100%',
+              pl: 4,
+            }}
+          >
+            Connected
+          </Typography>
+        </Grid>
+        <Grid size={{ xs: 12, md: 3 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+            <Typography
+              variant="subtitle1"
+              sx={{
+                color: 'white',
+                fontSize: { xs: '1rem', md: '1.25rem' },
+                width: '100%',
+              }}
             >
-              <FontAwesomeIcon icon={faFacebook} className="text-2xl" />
-            </a>
-            <a
-              href="https://www.instagram.com/ourgoodlife.id/"
-              target="_blank"
-              rel="noopener noreferrer"
+              Informations
+            </Typography>
+          </Box>
+          <List sx={{ paddingBottom: 0 }}>
+            {newMenu?.map((item, idx) => (
+              <ListItemButton
+                key={idx}
+                component={NavLink}
+                to={item.path}
+                sx={{
+                  width: 'auto',
+                  px: 0,
+                  color: 'white',
+                  '&:hover': {
+                    color: 'white',
+                  },
+                }}
+              >
+                <ListItemText
+                  primary={item.menu}
+                  sx={{
+                    '.MuiTypography-root': {
+                      whiteSpace: 'nowrap',
+                    },
+                  }}
+                />
+              </ListItemButton>
+            ))}
+          </List>
+        </Grid>
+        <Grid size={{ xs: 12, md: 3 }}>
+          <Typography
+            variant="subtitle1"
+            sx={{
+              color: 'white',
+              fontSize: { xs: '1rem', md: '1.25rem' },
+              width: '100%',
+              textDecoration: 'none',
+            }}
+            component={NavLink}
+            to="/"
+          >
+            Contact
+          </Typography>
+        </Grid>
+        <Grid size={{ xs: 12, md: 3 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+            <Typography
+              variant="subtitle1"
+              sx={{
+                color: 'white',
+                fontSize: { xs: '1rem', md: '1.25rem' },
+                width: '100%',
+              }}
             >
-              <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faTiktok} className="text-2xl" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <p className="copyright text-sm mt-4">Copyright © 2025 GOODLIFE</p>
-    </div>
+              Follow Us
+            </Typography>
+            <Box sx={{ display: 'flex', gap: 1 }}>
+              <Box
+                component={NavLink}
+                to="https://www.facebook.com/ourgoodlife.id"
+                target="_blank"
+                color="white"
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </Box>
+              <Box
+                component={NavLink}
+                to="https://www.instagram.com/ourgoodlife.id/"
+                target="_blank"
+                color="white"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </Box>
+              <Box component={NavLink} to="/" color="white">
+                <FontAwesomeIcon icon={faTiktok} />
+              </Box>
+            </Box>
+          </Box>
+        </Grid>
+      </Grid>
+      <Typography sx={{ mt: 7, textAlign: { xs: 'left', md: 'center' } }}>
+        © 2026 Good Life Indonesia
+      </Typography>
+    </Box>
   );
 }
