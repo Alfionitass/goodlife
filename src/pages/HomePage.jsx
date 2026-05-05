@@ -5,8 +5,14 @@ import { NavBar } from '../components/NavBar';
 import { HeroBanner } from '../components/HeroBanner';
 import data from '../data/data.json';
 import { Footer } from '../components/Footer';
+import { useResponsiveImage } from '../utils/utils';
 
 export default function HomePage() {
+  const successStoriesImage = useResponsiveImage({
+    xs: '/assets/success_stories_mobile.png',
+    md: '/assets/success_stories.png',
+  });
+
   return (
     <>
       <NavBar />
@@ -121,7 +127,7 @@ export default function HomePage() {
             <Grid size={{ xs: 12, md: 6 }}>
               <Box
                 component="img"
-                src="/assets/banner-1.png"
+                src={successStoriesImage}
                 sx={{
                   width: '100%',
                   height: 'auto',
