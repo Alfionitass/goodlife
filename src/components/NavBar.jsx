@@ -1,174 +1,155 @@
-import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router";
+import { useState, useEffect } from 'react';
+import { Link, NavLink } from 'react-router';
 import {
-  Navbar,
-  Typography,
+  Button,
+  Box,
+  ListItemButton,
+  ListItemText,
+  List,
+  AppBar,
+  Toolbar,
   IconButton,
-  Collapse,
-  Menu,
-  MenuList,
-  MenuHandler,
-  MenuItem,
-  ListItem,
-} from "@material-tailwind/react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  ChevronDownIcon,
-} from "@heroicons/react/24/outline";
-import { slugify } from "../utils/utils";
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import Drawer from '@mui/material/Drawer';
+import { slugify } from '../utils/utils';
+import data from '../data/data.json';
+import { products } from '../data/product';
 
-const NavListMenu = ({ products, handleLinkClick }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+export const NavList = ({ menu, handleLinkClick, direction = 'row' }) => {
   return (
-    <>
-      <Menu
-        open={isMenuOpen}
-        handler={setIsMenuOpen}
-        placement="bottom"
-        allowHover={true}
-      >
-        <MenuHandler>
-          <Typography
-            as="div"
-            className="lg:hover:text-brand-primary-dark lg:hover:underline lg:hover:underline-offset-8"
-          >
-            <ListItem
-              className="flex items-center gap-2 p-0 text-black lg:hover:text-brand-primary-dark bg-transparent hover:bg-transparent active:bg-red-50 focus:bg-transparent"
-              selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
-            >
-              Product
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-            </ListItem>
-          </Typography>
-        </MenuHandler>
-        <MenuList className="hidden rounded-xl lg:block">
-          {products?.map((item, id) => (
-            <Link key={id} to={`${slugify(item.title)}`} state={item} className="outline-none">
-              <MenuItem onClick={handleLinkClick} className="text-black text-base hover:bg-red-50 active:bg-red-50 focus:bg-red-50">
-                {item.title}
-              </MenuItem>
-            </Link>
-          ))}
-        </MenuList>
-      </Menu>
-      <div className="block lg:hidden mt-2">
-        <Collapse open={isMobileMenuOpen}>
-          {products?.map((item, id) => (
-            <Link key={id} to={`${slugify(item.title)}`} state={item} className="outline-none">
-              <MenuItem onClick={handleLinkClick} className="text-black text-base hover:bg-red-50 active:bg-red-50 focus:bg-red-50">
-                {item.title}
-              </MenuItem>
-            </Link>
-          ))}
-        </Collapse>
-      </div>
-    </>
-  );
-};
-
-const NavList = ({ menu, products, handleLinkClick }) => {
-  return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      {menu?.map((item, index) => (
-        <Typography as="li" color="black" className="p-1" key={index}>
-          {item.menu.includes("Product") ? (
-            <NavListMenu products={products} handleLinkClick={handleLinkClick} />
+    <List
+      sx={{
+        display: 'flex',
+        flexDirection: direction,
+        gap: direction === 'row' ? 3 : 1,
+        my: 0,
+        p: 0,
+      }}
+    >
+      {menu?.map((item, idx) => (
+        <ListItemButton
+          key={idx}
+          component={NavLink}
+          to={item.path}
+          onClick={handleLinkClick}
+          sx={{
+            width: 'auto',
+            px: 1,
+            color: 'white',
+            '&:hover': {
+              color: 'white',
+            },
+            fontWeight: 700,
+          }}
+        >
+          {item.menu !== 'Contact' ? (
+            <ListItemText
+              primary={item.menu}
+              sx={{
+                '.MuiTypography-root': {
+                  whiteSpace: 'nowrap',
+                },
+              }}
+            />
           ) : (
-            <NavLink
-              to={item.path}
-              onClick={handleLinkClick}
-              className="flex items-center lg:hover:text-brand-primary-dark lg:hover:underline lg:hover:underline-offset-8 transition-colors"
+            <Button
+              variant="outlined"
+              sx={{
+                backgroundColor: 'primary.white',
+                color: 'text.primary',
+                textTransform: 'capitalize'
+              }}
             >
               {item.menu}
-            </NavLink>
+            </Button>
           )}
-        </Typography>
+        </ListItemButton>
       ))}
-    </ul>
+    </List>
   );
 };
 
-export function NavBar({ menu, logo, products }) {
-  const [openNav, setOpenNav] = useState(false);
+export const NavBar = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleLinkClick = () => {
-    setOpenNav(false); // close the nav after clicking a menu item
+    setMobileOpen(false);
   };
 
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
-
   useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
+    const handleResize = () => window.innerWidth >= 900 && setMobileOpen(false);
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
 
-    // Detect scroll to change background color
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("resize", handleWindowResize);
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <Navbar
-      className={`mx-auto sticky top-0 z-10 h-max max-w-full rounded-none px-6 py-3 shadow-none transition-all duration-300 ${isScrolled ? "bg-red-50 border-red-50" : "bg-transparent border-transparent"}`}
+    <AppBar
+      position="fixed"
+      elevation={0}
+      sx={{
+        bgcolor: isScrolled ? 'secondary.main' : 'transparent',
+        transition: 'all 0.3s',
+        width: '100%',
+      }}
     >
-      <div className="flex flex-row items-center justify-between text-black lg:flex-col">
+      <Toolbar
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: { xs: 'wrap' },
+        }}
+      >
         <Link to="/">
-          <img src={logo} alt="Goodlife Logo" width="153" height="51" />
+          <Box component="img" src={data.logo.goodlifeWhite} alt="Goodlife Logo" sx={{ width: 150, height: 'auto' }} />
         </Link>
-        <div className="hidden lg:block">
-          <NavList
-            menu={menu}
-            products={products}
-            handleLinkClick={handleLinkClick}
-          />
-        </div>
+
+        {/* Desktop Nav */}
+        <Box sx={{ display: { xs: 'none', lg: 'flex' } }}>
+          <NavList menu={data.menu} handleLinkClick={handleLinkClick} direction="row" />
+        </Box>
+
+        {/* Mobile Menu Button */}
         <IconButton
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
-          onClick={() => setOpenNav(!openNav)}
+          sx={{ display: { xs: 'inline-flex', lg: 'none' }, color: 'white' }}
+          onClick={() => setMobileOpen((prev) => !prev)}
         >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
+          {mobileOpen ? <CloseIcon /> : <MenuIcon />}
         </IconButton>
-      </div>
-      <Collapse open={openNav}>
-        <NavList
-          menu={menu}
-          products={products}
-          handleLinkClick={handleLinkClick}
-        />
-      </Collapse>
-    </Navbar>
+
+        <Drawer
+          anchor="right"
+          open={mobileOpen}
+          onClose={() => setMobileOpen(false)}
+          PaperProps={{
+            sx: {
+              width: 260,
+              bgcolor: 'secondary.main',
+              color: 'white',
+              pt: 2,
+            },
+          }}
+        >
+          <Box sx={{ display: 'flex', justifyContent: 'flex-end', px: 2 }}>
+            <IconButton onClick={() => setMobileOpen(false)} sx={{ color: 'white' }}>
+              <CloseIcon />
+            </IconButton>
+          </Box>
+          <Box sx={{ px: 2 }}>
+            <NavList menu={data.menu} handleLinkClick={handleLinkClick} direction="column" />
+          </Box>
+        </Drawer>
+      </Toolbar>
+    </AppBar>
   );
-}
+};

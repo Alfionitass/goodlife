@@ -1,24 +1,28 @@
 {
     "menu": [
         {
-            "menu": "About Us",
-            "path": "about"
-        },
-        {
-            "menu": "Product",
+            "menu": "Home",
             "path": "/"
         },
         {
-            "menu": "Service",
+            "menu": "Who We Are",
             "path": "/"
         },
         {
-            "menu": "Partnership",
+            "menu": "What We Do",
             "path": "/"
         },
         {
-            "menu": "Contact Us",
-            "path": "contact"
+            "menu": "Success Stories",
+            "path": "/"
+        },
+        {
+            "menu": "Career",
+            "path": "/"
+        },
+        {
+            "menu": "Contact",
+            "path": "/"
         }
     ],
     "logo": {
@@ -82,5 +86,31 @@
     "whatsapp": {
         "imgSrc": "",
         "alt": "WhatsApp"
-    }
+    },
+    "services": [
+        {
+            "service": "Strategic Market Entry & Positioning",
+            "path": "/"
+        },
+        {
+            "service": "Brand Architecture & Identity",
+            "path": "/"
+        },
+        {
+            "service": "Digital & Performance Marketing",
+            "path": "/"
+        },
+        {
+            "service": "Omni-Channel Media Strategy",
+            "path": "/"
+        },
+        {
+            "service": "Sales Enablement & Channel Development",
+            "path": "/"
+        },
+        {
+            "service": "Analytics & ROI Optimisation",
+            "path": "/"
+        }
+    ]
 }
